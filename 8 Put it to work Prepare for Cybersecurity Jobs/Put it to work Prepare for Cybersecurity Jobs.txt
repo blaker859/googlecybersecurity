@@ -5,5 +5,40 @@ Escalate incidents
 Communicate effectively to influence stakeholders
 Find, prepare for, and apply for security jobs
 
-	Event and Incident Detection
+
+		Stakeholder: An individual or a group that has an interest in any decision or activity of an organization
+
+		Visual dashboard: A way of displaying various types of data quickly in one place
 		
+		OWASP Top 10: A globally recognized standard awareness document that lists the top 10 most critical security risks to web applications 
+						
+		Rapport: A friendly relationship in which the people involved understand each other’s ideas and communicate well with each other
+
+		STAR method: An interview technique used to answer behavioral and situational questions 
+
+		Elevator pitch: A brief summary of your experience, skills, and background
+
+Possible technical interview questions
+
+		Every technical interview will be different, depending on the company and the interviewers. But here are a few possible technical interview questions to help you prepare: 
+
+		What is the TCP/IP model? 
+
+		The TCP/IP model is a framework used to visualize how data is organized and transmitted across a network. 
+
+		What is the OSI model?
+
+		The OSI model stands for open systems interconnection (OSI) model.
+		It is a standardized concept that describes the seven layers computers use to communicate and send data over the network. 
+
+		What are SIEM tools and what are they used for? 
+		SIEM tools are security information and event management tools that are used by security professionals to identify and analyze security threats, risks, and vulnerabilities. 
+
+
+https://foobar.withgoogle.com/#
+
+time limited challenge
+	type: request
+	
+	SEC+ Promo:
+	GoogleSecurity2023
