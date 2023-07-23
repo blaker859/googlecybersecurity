@@ -1,0 +1,214 @@
+Linux and SQL Week 3
+
+	The command line
+	Navigating and managing the file system
+	Authenticating and Authorizing Users
+	Resources
+	
+Security Analysts
+	work with server logs
+	navigate manage and analyze files remotely
+	verify and configure users and group access
+	Give authorization and set file permissions
+	
+Core Commands for navigation
+	FHS
+		organizes data
+		hierarchal design
+			Root - highest level
+	PWD
+		prints working directory
+	ls
+		display files and directories in directory
+	cd
+		change directory
+	
+	cat
+		displays the content of a file
+	head
+		10 lines of the beginning of the file
+	
+	/home: Each user in the system gets their own home directory.
+
+	/bin: This directory stands for “binary” and contains binary files and other executables.
+		Executables are files that contain a series of commands a computer needs to follow to run programs and perform other functions.
+
+	/etc: This directory stores the system’s configuration files.
+
+	/tmp: This directory stores many temporary files. The /tmp directory is commonly used by attackers because anyone in the system can modify data in these files.
+
+	/mnt: This directory stands for “mount” and stores media, such as USB drives and hard drives.
+
+	Pro Tip: You can use the man hier command to learn more about the FHS and its standard directories.
+
+	Note: When the path leads to a subdirectory below the user’s home directory, the user’s home directory can be represented as the tilde (~).
+		For example, /home/analyst/logs can also be represented as ~/logs.
+		
+	Pro Tip: To learn what your username is, use the whoami command. The whoami command returns the username of the current user.
+		For example, if your username is analyst, entering whoami returns analyst.
+		
+	Pro Tip: If you want to change the number of lines returned by head, you can specify the number of lines by including -n.
+		For example, if you only want to display the first five lines of the updates.txt file, enter head -n 5 updates.txt.
+
+	tail
+		The tail command does the opposite of head. This command can be used to display just the end of a file, by default 10 lines.
+		Entering tail updates.txt returns only the last 10 lines of the updates.txt file.
+
+	Pro Tip: You can use tail to read the most recent information in a log file.
+
+	less
+		The less command returns the content of a file one page at a time.
+		For example, entering less updates.txt changes the terminal window to display the contents of updates.txt one page at a time.
+		This allows you to easily move forward and backward through the content. 
+			Space bar: Move forward one page
+			b: Move back one page
+			Down arrow: Move forward one line
+			Up arrow: Move back one line
+			q: Quit and return to the previous terminal window
+			
+Manage File Content in Bash
+	grep 
+		searches a specified file and returns all lines in the file containing a specified string
+	
+	piping | 
+		sends the std output of one command into another command for processing
+	
+	find
+		searches for directories and files that meet specified criteria.
+		There’s a wide range of criteria that can be specified with find. For example, you can search for files and directories that:
+			Contain a specific string in the name,
+			Are a certain file size, or
+			Were last modified within a certain time frame.
+		find /home/analyst/projects
+			searches for everything starting at the projects directory. 
+		-name and -iname
+			One key criteria analysts might use with find is to find file or directory names that contain a specific string. 
+			-name is case sensitive
+			-iname is not case sensitive
+				Note: An asterisk (*) is used as a wildcard to represent zero or more unknown characters.	
+		-mtime
+			find /home/analyst/projects -mtime -3 returns all files and directories in the projects directory that have been modified within the past three days.
+			entering -mtime +1 indicates all files or directories last modified more than one day ago
+			entering -mtime -1 indicates all files or directories last modified less than one day ago. 
+				Note: The option -mmin can be used instead of -mtime if you want to base the search on minutes rather than days.
+		
+Create and Modify Directories and Files
+	mkdir
+		make dir
+		
+	rmdir
+		remove dir
+	
+	touch
+		creates a file
+	
+	rm
+		removes a file
+		
+	mv
+		moves file
+	
+	cp
+		copies file
+		
+	When used with echo, the > and >> operators can be used to send the output of echo to a specified file rather than the screen.
+	The difference between the two is that > overwrites your existing file, and >> adds your content to the end of the existing file instead of overwriting it.
+
+Authenticate and Authorize Users
+	permissions
+		type of access granted for a file or directory
+	
+	Authorization
+		concept of granting access to specific resources in a system
+		need to know basis
+		
+	Permissions in Linux
+		read
+		write
+		execute
+	
+	Owners
+		User
+		Group
+		Other
+		
+	drwxrwxrwx
+		directory
+		1.users have rwx
+		2.group has rwx
+		3.other has rwx
+	
+	Options
+		ls -l 
+			displays permissions to files and directories
+		ls -a
+			displays hidden files
+		
+Change Permissions
+	chmod
+		changes permissions on files and directories
+		chmod g+w, o-r access.txt
+			group + write
+			other - read
+	
+		chmod u=r,g=r,o=r login_sessions.txt
+			This command overwrites existing permissions.
+			
+	chown
+		command changes ownership of a file or directory
+		To change the group owner of access.txt to security, enter sudo chown :security access.txt
+		You must enter a colon (:) before security to designate it as a group name.
+	
+Adding and deleting users
+	root user (superuser)
+		no limitations
+		create modify execute delete any file
+		
+	Problems
+		security risks
+		irriversible mistakes
+		accountability
+			no way to track who ran commands
+	
+	sudo
+		temporarily grants root privileges to users
+		super user do
+		sudoers file to grant permission to users
+		
+	useradd
+		adds user to the system -sudo only
+		-g: Sets the user’s default group, also called their primary group
+		-G: Adds the user to additional groups, also called supplemental or secondary groups
+			sudo useradd -G finance,admin fgarcia adds fgarcia as a new user and adds them to the existing finance and admin groups
+	
+	userdel
+		deletes user from the system
+		userdel command doesn’t delete the files in the user’s home directory unless you use the -r option
+		
+		
+	usermod
+		modifies existing user accounts -g -G both work here as well
+		To add a supplemental group for an existing user, you need the -G option.
+		You also need a -a option, which appends the user to an existing group and is only used with the -G option.
+			For example, entering sudo usermod -a -G marketing fgarcia
+		-d: Changes the user’s home directory.
+		-l: Changes the user’s login name.
+		-L: Locks the account so the user can’t log in.
+	
+Getting Help Resources
+	man
+		displays information on commands and how they work
+	
+	whatis
+		displays a description of commands in a single line
+		
+	apropos
+		searches man page descriptions for a specified string
+		-a only searches with the following arguments provided
+		ex:
+			apropos -a add group
+				addgroup (8)         - add a user or group to the system
+				adduser (8)          - add a user or group to the system
+				adduser.conf (5)     - configuration file for adduser(8) and addgroup(8) .
+				groupadd (8)         - create a new group
+				

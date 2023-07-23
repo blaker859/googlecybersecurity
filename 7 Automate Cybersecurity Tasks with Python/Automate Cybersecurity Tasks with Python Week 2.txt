@@ -1,0 +1,87 @@
+Automate Cybersecurity Tasks with Python Week 2
+
+	Functions
+	Modules and Libraries
+	Code Readability
+
+
+Introduction to Functions
+
+	Function
+		section of code that can be reused in code
+		
+		built in functions and user created functions
+		
+	Create a basic user defined function
+		def 
+			creates a function
+		
+	Return Statements
+		statement that executes inside a function and sends info back to the function call
+		
+	A global variable is a variable that is available through the entire program.
+	
+	A local variable is a variable assigned within a function.
+	
+	max()
+		returns biggest number passed into it
+		
+		
+Learn from the Python Community
+
+	Modules and Libraries
+	
+		Library
+			collection of modules
+		
+		Modules
+			python file with additional functions
+			
+	Python Standard Library 
+	
+		extensive code packaged with python
+			re
+				searching for patterns
+			csv
+				work efficiently with csv files
+			glob
+			os
+				both for command line
+			time
+			datetime
+			numpy
+			statistics
+				calculating statistics related to numeric data
+				
+			ex:
+			
+import statistics
+monthly_failed_attempts = [20, 17, 178, 33, 15, 21, 19, 29, 32, 15, 25, 19]
+mean_failed_attempts = statistics.mean(monthly_failed_attempts)
+print("mean:", mean_failed_attempts)
+	
+	or 
+	
+from statistics import mean, median
+monthly_failed_attempts = [20, 17, 178, 33, 15, 21, 19, 29, 32, 15, 25, 19]
+mean_failed_attempts = statistics.mean(monthly_failed_attempts)
+print("mean:", mean_failed_attempts)
+
+	
+	Style guides
+		PEP 8 Style guide
+			sytlistic guideliens
+			Python, Enhancement, Protocols
+			makes code more readability
+			code is read more than it's written
+			recommends 4 spaces for indentation
+			
+	Indentation
+		at least one space before a line of code
+		
+	Comments
+		#
+		or 
+		"""
+	
+	

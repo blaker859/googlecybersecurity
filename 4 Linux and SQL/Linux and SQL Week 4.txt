@@ -1,0 +1,113 @@
+Linux and SQL Week 4
+
+	Relational Databases
+	SQL Queries
+	SQL filters
+	SQL joins
+	
+Databases
+	accessed by multiple people simultaneously
+	store massive amounts of data
+	perform complex tasks while accessing data
+	
+Relational Database
+	structured database containing tables that are related to each other
+	rows = records
+	keys
+		primary key
+			every row is unique and not null
+		foreign key
+			column in a table that is a primary key in another table
+			can have empty values and duplicates
+	
+	To access SQL from Linux, you need to type in a command for the version of SQL that you want to use.
+		For example, if you want to access SQLite, you can enter the command sqlite3 in the command line.
+		
+Basic Queries
+	select
+		which columns to return
+	
+	from
+		table to query
+	
+	syntax
+		properly structured commands
+		
+	select * from employees;
+		return all records from employees table
+		
+	ORDER BY 
+		sequences the records returned by a query based on a specified column or columns.
+		This can be in either ascending or descending order.
+		ex:
+			SELECT customerid, city, country
+			FROM customers
+			ORDER BY city DESC;
+		
+Basic filters on SQL queries
+	where indicates condition for filer
+		where country = 'usa'
+	
+	wildcards
+		'East%'
+		must use like
+		
+	like
+		used with where to search for a pattern
+		
+	'a%'
+		apple123, art, a
+	'a_'
+		as, an, a7
+	'a__' 
+		ant, add, a1c
+	'%a'
+		pizza, Z6ra, a
+	'_a'
+		ma, 1a, Ha
+	'%a%'
+		Again, back, a
+	'_a_'
+		Car, ban, ea7
+		
+Filter dates and numbers
+	string
+	numeric
+	date and time
+	<> = not equal to
+	
+	between
+		numbers or dates between a range
+		ex:
+			select * from machines where ospatch between '2021-01-08' and '2022-01-08';
+		numbers don't need quotation marks
+	
+Filters with AND, OR, and NOT
+	where not 
+	WHERE NOT country = 'Canada' AND NOT country = 'USA';
+	
+SQL joins
+	Inner join
+		returns rows matching on a specified column that exists in more than one table
+		ex:
+			inner join machines on employees.employee_id = machines.employee_id
+	
+Type of joins
+	Outer Joins
+		left join
+			all records on the first table but only rows of the second table that match on a specified column
+		right join
+			all records on the second table but only rows of the first table that match on a specified column
+		full outer join
+			returns all records from both tables
+	Inner joins only return rows that match on a specified column, but outer joins also return rows that don't match on the specified column.
+	
+Aggregate functions
+	COUNT returns a single number that represents the number of rows returned from your query.
+	AVG returns a single number that represents the average of the numerical data in a column.
+	SUM returns a single number that represents the sum of the numerical data in a column. 
+	ex:
+		SELECT COUNT(firstname)
+		FROM customers;
+		
+		

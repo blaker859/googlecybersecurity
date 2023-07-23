@@ -1,0 +1,232 @@
+Sound the Alarm Detection and Response Week 3
+
+	Investigate and verify an incident
+	Plans and processes behind incident respone
+	Post-incident actions
+	
+	
+Incident Detection and Verification
+	
+	The detection and analysis phase of the lifecycle
+		
+		detection refers to the prompt discovery of security events 
+		
+		analysis involves the investigation and validation of alerts
+		
+		Challenges
+			impossible to detect everything
+			High Volume of Alerts
+			
+			
+	Cybersecurity incident detection methods
+		
+		Threat hunting
+			is the proactive search for threats on a network.
+				For example, fileless malware is difficult for detection tools to identify.
+				It’s a form of malware that uses sophisticated evasion techniques such as hiding in memory instead of using files or applications
+				, allowing it to bypass traditional methods of detection like signature analysi
+			
+		Threat intelligence
+			evidence-based threat information that provides context about existing or emerging threats
+			
+			Threat intelligence can come from private or public sources like:
+
+				Industry reports:
+					These often include details about attacker's tactics, techniques, and procedures (TTP).
+
+				Government advisories:
+					Similar to industry reports, government advisories include details about attackers' TTP. 
+
+				Threat data feeds: 
+					Threat data feeds provide a stream of threat-related data that can be used to help protect against sophisticated attackers like advanced persistent threats (APTs).
+					
+			
+			Cyber deception
+				Cyber deception involves techniques that deliberately deceive malicious actors with the goal of increasing detection and improving defensive strategies.
+				
+				Honeypots
+					 active cyber defense mechanism that uses deception technology. 
+					 Honeypots are systems or resources that are created as decoys vulnerable to attacks with the purpose of attracting potential intruders.
+					 For example, having a fake file labeled Client Credit Card Information - 2022 can be used to capture the activity of malicious actors by tricking them into accessing the file because it appears to be legitimate.
+					 Once a malicious actor tries to access this file, security teams are alerted.
+					 
+			
+	Indicators of Compromise
+	
+		Indicators of Compromise(IoCs)
+			are observable evidence that suggests signs of a potential security incident. 
+			IoCs help to identify the who and what of an attack after it's taken place
+		
+		Indicators of attack (IoA)
+			are the series of observed events that indicate a real-time incident.
+			IoAs focus on identifying the behavioral evidence of an attacker, including their methods and intentions.
+			IoAs focus on finding the why and how of an ongoing or unknown attack
+			
+		Pyramid of Pain
+			https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html
+			the relationship between indicators of compromise and the level of difficulty that malicious actors experience when indicators of compromise are blocked by security teams
+			Each type of indicator of compromise is separated into levels of difficulty.
+			These levels represent the “pain” levels that an attacker faces when security teams block the activity associated with the indicator of compromise
+			 
+			Hash values:
+				Hashes that correspond to known malicious files.
+				These are often used to provide unique references to specific samples of malware or to files involved in an intrusion.
+
+			IP addresses:
+				An internet protocol address like 192.168.1.1
+
+			Domain names:
+				A web address such as www.google.com 
+
+			Network artifacts:
+				Observable evidence created by malicious actors on a network.
+				For example, information found in network protocols such as User-Agent strings. 
+
+			Host artifacts:
+				Observable evidence created by malicious actors on a host.
+				A host is any device that’s connected on a network.
+				For example, the name of a file created by malware.
+
+			Tools:
+				Software that’s used by a malicious actor to achieve their goal.
+				For example, attackers can use password cracking tools like John the Ripper to perform password attacks to gain access into an account.
+
+			Tactics, techniques, and procedures (TTPs):
+				This is the behavior of a malicious actor.
+				Tactics refer to the high-level overview of the behavior.
+				Techniques provide detailed descriptions of the behavior relating to the tactic.
+				Procedures are highly detailed descriptions of the technique. TTPs are the hardest to detect. 
+				
+https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/5wpDfG3dRQyt3j7I9Vem3Q_31d63be045bc492e9b94aaeeb809a2f1_b5ndsAVFpYfEQSnQvmCly3Ws1dMEo2js79jF_lmAHf6cke-2RsAJfd2JrQ4GoFZdLOIdxxGx-AyNc-cnn4dolkvJLj1dydB1g0JmArLZWeZy7VJLFagiJ0xcq1oz7oirJA4dN8qjz6CI87yrOt-QSvGE7J28YVbPtj59GiU35sLHgGU8RIqqEkRI-JAk5w?expiry=1689811200000&hmac=aXieJ_-KMvYA1sH_TRtIjdpM-ffsOh0tPsSShHED4Ds
+
+	
+	Analyze indicators of compromise with investigative tools
+	
+		The power of crowdsourcing
+			the practice of gathering information using public input and collaboration.
+			Threat intelligence platforms use crowdsourcing to collect information from the global cybersecurity community
+			Without crowdsourcing, attackers can perform the same attacks against multiple organizations. 
+		
+			information-sharing organizations include Information Sharing and Analysis Centers (ISACs), which focus on collecting and sharing sector-specific threat intelligence to companies within specific industries like energy, healthcare, and others.
+			
+			Open-source intelligence (OSINT)
+				is the collection and analysis of information from publicly available sources to generate usable intelligence
+			
+
+Create and Use Documentation
+	
+	The benefits of documentation
+		Transparency
+		Standardization
+		Clarity
+		
+		
+	Document Evidence with chain of custody
+			The process of documenting evidence possession and control during an incident lifecycle
+			tracking evidence
+			location, hostname, mac address, ip address
+			date, purpose of transfer
+			
+		Broken Chain of Custody
+			inconsistencies in the collection and logging of evidence in the chain of custody
+			
+		Chain of custody establishes
+			integrity
+			reliability
+			accuracy
+			
+			
+	The value of cybersecurity playbooks
+		Non automated
+			step by step performed by an analyst
+		Automated
+			SOAR and SIEM Tools
+		Semi Automated
+			combines an analysts actions with automation
+			
+		
+Response and Recovery
+
+	The role of triage in incident response
+		the prioritizing of incidets according to their importance or urgency
+		
+		Triage process:
+			receive and assess an alert
+			assign priority based on guidelines
+			collect and analyze
+			
+		Questions to ask
+			is there anything out of the ordinary
+			are there multiple failed login attempts
+			did the login happen outside of normal hours
+			did the login happen outside of the network
+			
+		
+	The Triage Process
+	
+		Assign priority 
+			Functional impact
+				security incidents that target information technology systems impact the service that htese systems provide to its users
+			
+			Infomation impact
+				 Incidents can affect the confidentiality, integrity, and availability of an organization’s data and information.
+				 In a data exfiltration attack, malicious actors can steal sensitive data.
+			
+			Recoverability
+				 How an organization recovers from an incident depends on the size and scope of the incident and the amount of resources available. 
+				 In some cases, recovery might not be possible, like when a malicious actor successfully steals proprietary data and shares it publicly.
+		
+		
+	The containment, eradication, and recovery phase of the lifecycle
+		
+		Containment
+			the act of limiting and preventing additional damage from an incident
+				isolate infected system by disconnecting from the network
+				
+		Eradication
+			the complete removal of incident elements from infected components
+			
+		Recovery
+			the process of returning affected systems back to normal operation
+			
+			business continuity plan (BCP)
+				is a document that outlines the procedures to sustain business operations during and after a significant disruption.
+			Disaster recovery plans
+				recover information systems in response to a major disaster.
+				These disasters can range from hardware failure to the destruction of facilities from a natural disaster, like a flood. 
+				
+		Site resilience 
+			Hot sites:
+				A fully operational facility that is a duplicate of an organization's primary environment.
+				Hot sites can be activated immediately when an organization's primary site experiences failure or disruption.
+
+			Warm sites:
+				A facility that contains a fully updated and configured version of the hot site. 
+				Unlike hot sites, warm sites are not fully operational and available for immediate use but can quickly be made operational when a failure or disruption occurs.
+
+			Cold sites:
+				A backup facility equipped with some of the necessary infrastructure required to operate an organization's site. 
+				When a disruption or failure occurs, cold sites might not be ready for immediate use and might need additional work to be operational.
+		
+		
+Post-incident Actions
+	
+	The post incident activity phase of the lifecycle
+		the process of reviewing an incident to identify areas for imporvement during incident handling
+		
+		Final report
+			documentation that provides a comprehensive review of an incident
+			
+		Lessons learned meeting
+			incident is reviewed, what actions, and how well they worked
+			share ideas and insight on the incident
+			Questions:
+				what happened
+				what time did it happen
+				who discovered it
+				how did it get contained
+				what were the actions taken for recovery
+				what could have been done differently
+	
+	Post Incident Review
+		

@@ -1,0 +1,197 @@
+Assets, Threats and Vulnerabilites Week 1
+	
+	Assets, Threats and Vulnerabilites
+	
+	Asset inventories
+	
+	Challenges in a rapidly changing digital world
+	
+	Policies, Standard, and Procedures
+	
+	NIST Cybersecurity Framework
+	
+The what, why, and how of asset security
+	Risk
+		anything that can impact the configdntiality, integrity, or availability of an asset
+	
+	Security risk planning
+		assets
+			item percieved as having value to a company
+			
+		threats
+			any circumstance or event that could negatively impact assets
+			
+		vulnerabilites
+			a weakness that can be exploited by a threat
+			
+	Likelihood x Impact = Risk
+		In general, we calculate risk in this field to help:
+			Prevent costly and disruptive events
+			Identify improvements that can be made to systems and processes
+			Determine which risks can be tolerated
+			Prioritize the critical assets that require attention
+		
+	Risk factors
+		Threats
+		Vulnerabilities
+		
+	Categories of threat
+		intentional
+			hacker gains access to sensitive info
+		unintentional
+			employee holds door open
+		
+Security starts with asset classification
+	Asset management
+		tracking assets and the risks that affect them
+	
+	Asset inventory
+		catalog of assets that need to be protected
+		
+	Asset Classification
+		the practice of labeling assets based on sensitivity and importance to an organization
+	
+	Levels of asset classification
+		Public
+		
+		Internal
+			inside organization
+			
+		Confidential
+			people working on the project
+			
+		Restricted
+			highly classified - need to know basis
+			
+Common Classification Requirements
+	sensitivity and importance of an asset typically requires knowing the following:
+		What you have
+		Where it is
+		Who owns it, and
+		How important it is
+		
+Digital and Physical Assets
+
+	Assets in a digital world
+		Data
+			information translated, processed, or stored by a computer
+	
+	States of data
+		in use
+			actively using 
+		in transit
+			data traveling from one point to another
+		in rest
+			data not currently be accessed
+			
+	Information Security (infosec)
+		the practice of keeping data in all states away from unauthorized users
+		
+	The emergence of cloud security
+		Soaring into the cloud
+			The availability of cloud technologies has drastically changed how businesses operate online.
+			These new tools allow companies to scale and adapt quickly while also lowering their costs.
+			Despite these benefits, the shift to cloud-based services has also introduced a range of new cybersecurity challenges that put assets at risk.
+	
+	Cloud-based services
+		Software as a service (SaaS)
+			SaaS refers to front-end applications that users access via a web browser.
+			The service providers host, manage, and maintain all of the back-end systems for those applications.
+			ex:
+				gmail, slack, zoom
+		
+		Platform as a service (PaaS)
+			PaaS refers to back-end application development tools that clients can access online.
+			Developers use these resources to write code and build, manage, and deploy their own apps.
+			Meanwhile, the cloud service providers host and maintain the back-end hardware and software that the apps use to operate. 
+			ex:
+				Google App Engine, VMware Cloud Foundry
+				
+		Infrastructure as a service (IaaS)
+			IaaS customers are given remote access to a range of back-end systems that are hosted by the cloud service provider.
+			This includes data processing servers, storage, networking resources, and more.
+			ex:
+				GCP
+				Azure
+				
+		 Clients are commonly responsible for securing anything that is directly within their control:
+			Identity and access management
+			Resource configuration
+			Data handling
+			
+		Cloud security challenges
+			Misconfiguration 
+				is one of the biggest concerns. Customers of cloud-based services are responsible for configuring their own security environment.
+				Oftentimes, they use out-of-the-box configurations that fail to address their specific security objectives.
+			
+			Cloud-native breaches
+				are more likely to occur due to misconfigured services.
+
+			Monitoring access might be difficult
+				depending on the client and level of service.
+
+			Meeting regulatory standards
+				is also a concern, particularly in industries that are required by law to follow specific requirements such as HIPAA, PCI DSS, and GDPR.
+				
+Risk and Asset Security
+	Types of Risk Categories
+		Damage
+		Disclosure
+		Loss of Information
+		
+	Elements of a security Plan
+		Policies
+			set of rules that reduces risk and protects information
+			AUP secure ways to access corporate systems
+			
+		Standards
+			references that inform how to set policies
+		
+		Procedures
+			Step by step instructions to perform specific security tasks
+			
+	The NIST Cybersecurity Framework
+		Compliance
+			the process of adhering to internal standards and external regulations
+		
+		Regulations 
+			rules set by a government or other authority to control the way something is done
+		
+	NIST (CSF)		
+		A voluntaty framework that consists of standards, guidelines, and best practices to manage cybersecurity risk
+		Core
+			The CSF core is a set of desired cybersecurity outcomes that help organizations customize their security plan.
+				identify
+				protect
+				detect
+				respond
+				recover
+			
+		Tiers
+		The CSF tiers are a way of measuring the sophistication of an organization's cybersecurity program.
+		1-4
+			1 - Passive
+					bare minimum
+			
+			4 - Exemplary Security
+			
+		Profiles
+			The CSF profiles are pre-made templates of the NIST CSF that are developed by a team of industry experts. 
+			CSF profiles are tailored to address the specific risks of an organization or industry.
+				They are used to help organizations develop a baseline for their cybersecurity plans,
+				or as a way of comparing their current cybersecurity posture to a specific industry standard.
+		
+		Implementing the CSF
+			Create a current profile
+				of the security operations and outline the specific needs of your business.
+				
+			Perform a risk assessment
+				to identify which of your current operations are meeting business and regulatory standards.
+				
+			Analyze and prioritize
+				existing gaps in security operations that place the businesses assets at risk.
+				
+			Implement a plan of action
+				to achieve your organization’s goals and objectives.
+			
+		

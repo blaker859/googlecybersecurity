@@ -1,0 +1,36 @@
+Google Security Week 4
+	SIEM tools
+	Playbooks
+	Network Protocol Analyzers
+	Linux Operating System
+	Programming Languages
+	
+Common Cybersecurity tools
+	SIEM tools
+		app that collects logs
+	Chronocol
+		cloud native siem tool
+	Playbook
+		manual about op actions
+		chain of custody playbook.
+			Chain of custody is the process of documenting evidence possession and control during an incident lifecycle.
+		 protecting and preserving evidence playbook.
+			Protecting and preserving evidence is the process of properly working with fragile and volatile digital evidence.
+			As a security analyst, understanding what fragile and volatile digital evidence is, along with why there is a procedure, is critical.
+			you will consult the order of volatility, which is a sequence outlining the order of data that must be preserved from first to last.
+			It prioritizes volatile data, which is data that may be lost if the device in question powers off, regardless of the reason.
+			While conducting an investigation, improper management of digital evidence can compromise and alter that evidence.
+			When evidence is improperly managed during an investigation, it can no longer be used. 
+	Network Protocol Analyzer
+		packet sniffer
+		tool designed to capture and analyze data traffic
+		tcp dump and wire shark
+
+Core cybersecurity tools and knowledge
+	An intrusion detection system (IDS) is an application that monitors system activity and alerts on possible intrusions.
+		The system scans and analyzes network packets, which carry small amounts of data through a network.
+		The small amount of data makes the detection process easier for an IDS to identify potential threats to sensitive data.
+		Other occurrences an IDS might detect can include theft and unauthorized access.
+	Cryptographic encoding means converting plaintext into secure ciphertext.
+		Plaintext is unencrypted information and secure ciphertext is the result of encryption.
+	

@@ -1,0 +1,107 @@
+Frameworks and Controls Week 2
+
+Frameworks
+		guidelines used for building plans to help mitigate risk and threats to data and privacy
+Controls
+		Safeguards designed to reduce specific security risks
+			encryption
+				encoding format
+			authentication
+				the process of verifying who someone or something is
+			authorization
+				the concept of granting access to specific resources within a system
+				person has permission to look at a resource
+				
+		Office of the Director of National
+			Intelligence, the CTF was developed by the U.S. government to provide
+				“a common language for describing and communicating information about cyber threat activity.”
+				
+		The ISO 27000 family of standards enables organizations of all sectors and sizes to manage the security of assets,
+			International Organization for Standardization/International Electrotechnical Commission (ISO/IEC) 27001
+				such as financial information, intellectual property, employee data, and information entrusted to third parties.
+				 Although the ISO/IEC 27001 framework does not require the use of specific controls
+					it does provide a collection of controls that organizations can use to improve their security posture. 
+Design Principles
+		CIA Triad
+			A model that helps inform how organizations consider risk when setting up systems and security policies
+				Confidentiality
+					only authorized users can access specific resources and data
+						need to know basis
+				Integrity
+					the data is correct, authentic, and reliable
+				Availability
+					data is accessible to those wo are authorized to access it
+		CSF NIST
+			a coluntary framework that consists of standards, guidlines and bestpractices to handle cybersercurity risks					
+					SP 800.53
+						protections for government assets
+				Identify
+					the management of cybersecurity risk and its effect on an organizations people and assets
+				Protect
+					The strategy used to protect an organization through the implementation of policies, procedures, training, and tools that help mitigate cybersecurity threats
+				Detect
+					Identifying potential security incidents and improving monitoring capabilities to increase the speed and efficiency of detections
+				Respond
+					Makins sure that the process procedures are used to contain, neutralize, and analyze security incidents, and implement improvements to the security process
+				Recover
+					The process of returning affected systems back to normal operation
+		Open Web Applications Security Project (OWASP)
+			minimize attack surface area
+				all potential vulnerabilities
+				attack vectors
+					phishing emails
+					weak passwords
+				disable certain functions
+			principle of least privilege
+				have the least amount of privilege to do their everyday tasks
+			defense in depth
+				organization should have multiple security controls
+					mfa
+					firewalls
+					ids
+					permission settings
+			separation of duties
+				noone should be given so many privelges that they can missuse the system
+			keep security simple
+				Avoid unnecessarily complicated solutions. Complexity makes security difficult. 
+			fix security issues correctly
+				identify root cause quickly
+				correct vulnerabilities and conduct tests to make sure of success
+	Establish secure defaults
+		This principle means that the optimal security state of an application is also its default state for users;
+		it should take extra work to make the application insecure. 
+	Fail securely
+		Fail securely means that when a control fails or stops, it should do so by defaulting to its most secure option.
+		For example, when a firewall fails it should simply close all connections and block all new ones, rather than start accepting everything.
+	Don’t trust services
+	Avoid security by obscurity
+		The security of key systems should not rely on keeping details hidden. Use multiple factors of safety
+Audits
+		a review of an organizaitons security controls, policies, and procedures against a set of expectations
+		external and internal audits
+			internal audits
+				identify organizaitonal risk
+				assess controls
+				correct compliance issues
+		Common Elements of internal Audits
+			Establishing the scope and goals
+				specific criteria of an internal security audit
+				goals are an outline of the security objectives
+			conducting a risk assessment
+				identifying potential threats, risks, and vulnerabilities
+			completing a controls assessment
+				closely assessing assets and controls
+					control categories
+						administrative controls
+						technical controls
+							hardware and software controls
+						physical controls
+							cctv
+							locks
+			assessing compliance
+				are we aligning with regulatory compliance
+			communicating results to stakeholders
+				once complete results and recommendations need to be communcated
+				notes how quickly risks need to be addressed
+				identifies compliance regulations
+				recommendations on how to fix

@@ -1,0 +1,161 @@
+Linux and SQL Week 2
+
+All about Linux
+	Architecture of Linux
+	Different Distros of Linux
+	Shell
+	
+Linux Architecture
+	Components
+		user
+			interacting with computer
+		
+		applications
+			program for specific tasks
+
+		shell
+			command line interpretor
+		
+		filesystem hierarchy standard (FHS)
+			component of the linux os that organizes data
+		
+		kernel
+			manages processes and memory
+			uses drivers to execute tasks
+		
+		hardware
+			physical components of computer
+	
+	Applications
+		package manager
+			tool that helps users install, manage, and remove packages/applications
+		package
+			piece of software that can be combined with other packages to form an application
+	
+	Shell
+		command line interpretor
+		give commands to the kernel and receive responses from it
+		
+	Filesystem Hierarchy Standard (FHS)
+		specifies location where data is stored on the os
+			Directory
+				folders that contain files or other directories.
+				The FHS defines how directories, directory contents, and other storage is organized so the OS knows where to find specific data
+	
+	Kernel
+		component of the Linux OS that manages processes and memory
+		communicates with the applications to route commands.
+		the linux kernel is unique to the Linux OS and is critical for allocating resources in the system.
+		The kernel controls all major functions of the hardware which can help get tasks expedited more efficiently
+	
+	Hardware
+		phyisical components of a computer
+	
+	Peripheral devices
+		hardware comopnents that are attached and controlled by the computer system
+		Can be added or removed freely: 
+			monitors
+			printers
+			keyboard
+			mouse
+	
+	Internal Hardware
+		CPU
+			general computing tasks
+		RAM
+			short term memory
+			data needed for program is stored in RAM and then when closed it is deleted
+		hard drive
+			is a hardware comonent used for long term memory
+			
+Linux Distributions
+	Red Hat Enterprise Linux (CentOS)
+	Slackware (SUSE)
+	Debian (Ubuntu and KALI LINUX)
+	
+	Kali Linux
+		Created with Pen Testing and Digital Forensics in mind
+		Should be used in a virtual machine
+		
+		Metasploit
+			find vulnerabilites and exploit them on machines
+			
+		Burp Suite
+			test for weaknesses in web apps
+			
+		John the Ripper
+			guess passwords
+			
+		Digital Forensics
+			collecting and analyzing data to determine what has happened after an attack
+			
+			tcpdump
+				capture network traffic
+			wireshark
+				gui - analyze live and captured network traffic
+			autopsy
+				harddrives and smart phones
+		
+	Red Hat Enterprise Linux
+		subscription based distro built for enterprise use
+		offers dedicated support team for customers to call about issues
+		
+	CentOS
+		os closely related to Red Hat
+		Uses source code published by red hat to provide a similar platform
+		does not offer the same support, supported by community
+		
+	Ubuntu
+		widely used in security and other industries
+		Debian Derived common application by default
+		Widely used in Cloud Computing
+		
+	Parrot
+		open source distribution that is commonly used for security similar to Kali Linux
+		Debian based
+		
+Package Managers
+	Red Hat Package Manager (RPM) can be used for Linux distributions derived from Red Hat
+	package managers such as dpkg can be used for Linux distributions derived from Debian
+	Red Hat Package Manager (RPM) has files which use the .rpm file extension
+	Debian-derived Linux distributions, such as dpkg, have files which use the .deb file extension
+	
+Package Management Tools
+	Two notable tools are the Advanced Package Tool (APT) and Yellowdog Updater Modified (YUM).
+	APT is a tool used with Debian-derived distributions. It is run from the command-line interface to manage, search, and install packages.
+	YUM is a tool used with Red Hat-derived distributions. It is run from the command-line interface to manage, search, and install packages. YUM works with .rpm files.
+	
+Helpful navigation tips and keyboard shortcuts
+
+CTRL + C: Terminates a command that is currently running; from the instructions portion of Qwiklabs, you can use CTRL + C to copy, but within the terminal, it will only terminate a command and if one isn't running, it will display ^C at the prompt
+CTRL + V: Pastes text
+clear: Clears the terminal screen; this can also be done by entering CTRL + L
+CTRL + A: Sets your cursor at the beginning of a command
+CTRL + E: Sets your cursor at the end of a command
+Left arrow key: Moves left within a command
+Right arrow key: Moves right within a command
+Up arrow key: Provides the last command you entered into the command line; can be entered multiple times to go through multiple commands from the command history
+Down arrow key: Provides the next command in the command history; must be after using the up arrow key
+Tab key: Provides available suggestions for completing your text 
+
+Introduction to the Shell
+	command line interpretor
+	
+	Bourne-Again Shell (bash)
+	C Shell (csh)
+	Korn Shell (KSH)
+	Enhanced C shell (tcsh)
+	Z shell (zsh)
+	
+Input and Output in the Shell
+	Standard input
+		information received by the OS via the CLI
+		echo
+			outputs specified string of text
+		String data
+			ordered sequence of characters
+	
+	Generate output in the shell the echo command
+	Perform basic calculations the expr command
+	Clear the shell window the clear command
+	Explore the commands further

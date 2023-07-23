@@ -1,0 +1,330 @@
+Assets, Threats and Vulnerabilites Week 3
+
+	Vulnerability Management Process
+	Defense in depth model
+	The CVE List
+	Attack Surfaces
+	Common attack vectors
+	
+Flaws in the system	
+	Vulnerability Management
+		The process of finding and patching vulnerabilities
+		
+		Exploit
+			way of taking advantage of a vulnerability
+			
+		Vulnerability Management Process
+			1.Identify vulnerabilities
+				
+			2.Consider potential exploits
+				
+			3.Prepare defenses against threats
+					
+			4.Evaluate those defenses
+				
+		Zero-day
+			an exploit that was previously unknown
+			happening in real time, need to fix today
+		
+	
+	Defense in depth strategy
+		A layered approach to vulnerability management that reduces risk
+		
+		5 layer design
+			1.Perimeter layer
+				usernames and passwords
+				user authentication layer
+			
+			2.Network Layer
+				authorization
+				firewalls
+				
+			3.Endpoint layers
+				devices that have access on a network
+				antivirus software
+			
+			4.Application Layer
+				interfaces to talk to technology
+				MFA
+			
+			5.Data layer
+				personal data that must be protectes
+				
+	
+	Common vulnerabilities and exposures
+	
+		Exposure
+			mistake that can be exploited by a threat
+	
+		CVE List
+			Common vulnerabilities and exposures list
+				an openly accessible dictionary of known vulnerabilities and exposures
+				
+				MITRE (created CVE list)
+					collection of non profit research and development processes
+				
+				CNA
+					an organization that volunteers to analyze and distribute information on eligible CVEs
+					
+				Criteria
+					independent of other issues
+					recognized as a potential security risk
+					submitted with supporting evidence
+					only affect one codebase
+					
+			NIST national vulnerabilities database
+				Common Vulnerabilites Scoring System (CVSS)
+					a measurement system that scores the severity of a vulnerability
+					4.0 low risk
+					9.0 critical risk
+					
+			Commonly use the CVE list and CVSS list as a baseline of things to look at protecting
+	
+	The OWASP Top 10
+		Open Worldwide Application Security Project
+			an open platform that security professionals from around the world use to share information, tools, and events that are focused on securing the web.
+		
+		The organization has published this list since 2003 as a way to spread awareness of the web’s most targeted vulnerabilities.
+		
+		Note: Auditors also use the OWASP Top 10 as one point of reference when checking for regulatory compliance.
+		
+		Common vulnerabilities
+			Broken access control
+				Access controls limit what users can do in a web application.
+				Failures in these mechanisms can lead to unauthorized information disclosure, modification, or destruction. 
+				They can also give someone unauthorized access to other business applications.
+			
+			Cryptographic failures
+				Vulnerabilities can occur when businesses fail to encrypt things like personally identifiable information (PII).
+	
+			Injection
+				Injection occurs when malicious code is inserted into a vulnerable application.
+				Although the app appears to work normally, it does things that it wasn’t intended to do.
+				Injection attacks can give threat actors a backdoor into an organization’s information system.
+				A common target is a website’s login form.
+				When these forms are vulnerable to injection, attackers can insert malicious code that gives them access to modify or steal user credentials. 	
+					Statement 
+					PreparedStatement - prepared in advance and only can use certain data types and rejects if not matching
+					CallableStatement
+			
+			Insecure design
+				Applications should be designed in such a way that makes them resilient to attack.
+				When they aren’t, they’re much more vulnerable to threats like injection attacks or malware infections.
+			
+			Security misconfiguration
+				Misconfigurations occur when security settings aren’t properly set or maintained. Companies use a variety of different interconnected systems.
+				
+			Vulnerable and outdated components
+				Vulnerable and outdated components is a category that mainly relates to application development.
+				Instead of coding everything from scratch, most developers use open-source libraries to complete their projects faster and easier.
+				These can become out of data
+				
+			Identification and authentication failures
+				Identification is the keyword in this vulnerability category.
+				When applications fail to recognize who should have access and what they’re authorized to do, it can lead to serious problems.
+			
+			Software and data integrity failures
+				Software and data integrity failures are instances when updates or patches are inadequately reviewed before implementation.
+				Attackers might exploit these weaknesses to deliver malicious software.
+
+			Security logging and monitoring failures
+				In security, it’s important to be able to log and trace back events.
+				Having a record of events like user login attempts is critical to finding and fixing problems.
+				Sufficient monitoring and incident response is equally important.
+				
+			Server-side request forgery
+				when attackers manipulate the normal operations of a server to read or update other resources on that server.
+				These are possible when an application on the server is vulnerable.
+				Malicious code can be carried by the vulnerable app to the host server that will fetch unauthorized data.
+	
+	Open source intelligence
+		OSINT is the collection and analysis of information from publicly available sources to generate usable intelligence. 
+		
+		Information vs intelligence
+			Information refers to the collection of raw data or facts about a specific subject. 
+			Intelligence, on the other hand, refers to the analysis of information to produce knowledge or insights that can be used to support decision-making.
+	
+		Intelligence improves decision-making 
+			 Insights, or intelligence, can then be used to improve their decision making.
+			 In security, open-source information is used in a similar way to gain insights into threats and vulnerabilities that can pose risks to an organization.
+			
+			Here are some of the ways OSINT can be used to generate intelligence:
+				To provide insights into cyber attacks
+				To detect potential data exposures
+				To evaluate existing defenses
+				To identify unknown vulnerabilities
+		
+		
+Identify System vulnerabilities
+	Vulnerability assessments
+		Internal review process of an organizations security systems
+		
+	Process:
+		1.identification
+		2.vulnerability analysis
+		3.risk assessment
+		4.Remediation
+
+		A vulnerability scanner is software that automatically compares known vulnerabilities and exposures against the technologies on the network.
+		In general, these tools scan systems to find misconfigurations or programming flaws.
+
+		Perimeter layer, like authentication systems that validate user access
+			Network layer, which is made up of technologies like network firewalls and others
+			Endpoint layer, which describes devices on a network, like laptops, desktops, or servers
+			Application layer, which involves the software that users interact with
+			Data layer, which includes any information that’s stored, in transit, or in use
+		When a scan of any layer begins, the scanning tool compares the findings against databases of security threats
+	
+	Performing scans
+		Vulnerability scanners are meant to be non-intrusive. Meaning, they don’t break or take advantage of a system like an attacker would.
+			While vulnerability scanners are non-intrusive, there are instances when a scan can inadvertently cause issues, like crash a system.
+			
+	External vs. internal
+		External and internal scans simulate an attacker's approach.
+		
+		External scans test the perimeter layer outside of the internal network.
+		They analyze outward facing systems, like websites and firewalls. These kinds of scans can uncover vulnerable things like vulnerable network ports or servers.
+
+		Internal scans start from the opposite end by examining an organization's internal systems. 
+		For example, this type of scan might analyze application software for weaknesses in how it handles user input.
+		
+	Authenticated vs. unauthenticated
+		Authenticated and unauthenticated scans simulate whether or not a user has access to a system.
+		
+		Authenticated scans might test a system by logging in with a real user account or even with an admin account.
+		These service accounts are used to check for vulnerabilities, like broken access controls.
+		
+		Unauthenticated scans simulate external threat actors that do not have access to your business resources.
+		For example, a scan might analyze file shares within the organization that are used to house internal-only documents.
+		Unauthenticated users should receive "access denied" results if they tried opening these files.
+		However, a vulnerability would be identified if you were able to access a file.
+		
+	Limited vs. comprehensive
+		Limited and comprehensive scans focus on particular devices that are accessed by internal and external users.	
+
+		Limited scans analyze particular devices on a network, like searching for misconfigurations on a firewall.
+
+		Comprehensive scans analyze all devices connected to a network. This includes operating systems, user databases, and more.
+		
+		Pro tip: Discovery scanning should be done prior to limited or comprehensive scans.
+			Discovery scanning is used to get an idea of the computers, devices, and open ports that are on a network.
+	
+	
+	Penetration Testing
+	
+			Learning from varied perspectives
+				These authorized attacks are performed by pen testers who are skilled in programming and network architecture.
+					Depending on their objectives, organizations might use a few different approaches to penetration testing:
+				Red team tests simulate attacks to identify vulnerabilities in systems, networks, or applications.
+				Blue team tests focus on defense and incident response to validate an organization's existing security systems.
+				Purple team tests are collaborative, focusing on improving the security posture of the organization by combining elements of red and blue team exercises.
+				
+			Red team tests are commonly performed by independent pen testers who are hired to evaluate internal systems. 
+		
+		Open-box testing
+			the tester has the same privileged access that an internal developer would have—information like system architecture, data flow, and network diagrams.
+			
+		Closed-box testing 
+			the tester has little to no access to internal systems—similar to a malicious hacker.
+			This strategy is sometimes referred to as external, black-box, or zero knowledge penetration testing.
+			
+		Partial knowledge testing
+			when the tester has limited access and knowledge of an internal system—for example, a customer service representative.
+			This strategy is also known as gray-box testing.
+		
+		Becoming a penetration tester
+			Network and application security
+			Experience with operating systems, like Linux
+			Vulnerability analysis and threat modeling
+			Detection and response tools
+			Programming languages, like Python and BASH
+			Communication skills
+		
+		Bug bounty programs
+			Organization’s commonly run bug bounty programs which offer freelance pen testers financial rewards for finding and reporting vulnerabilities in their products.
+			Bug bounties are great opportunities for amateur security professionals to participate and grow their skills. 
+	
+	
+Cyber attacker mindset
+
+	Simulating threats
+		Proactive simulations
+			assume the role of an attacker by exploiting vulnerabilities and breaking through defenses. This is sometimes called a red team exercise.
+		
+		Reactive simulations
+			assume the role of a defender responding to an attack. This is sometimes called a blue team exercise.
+			
+	Scanning for trouble
+		Identification: A vulnerable server is flagged because it's running an outdated operating system (OS).
+		Vulnerability analysis: Research is done on the outdated OS and its vulnerabilities.
+		Risk assessment: After doing your due diligence, the severity of each vulnerability is scored and the impact of not fixing it is evaluated.
+		Remediation: Finally, the information that you’ve gathered can be used to address the issue.
+		
+Types of threat actors
+	A threat actor is any person or group who presents a security risk
+	
+		Competitors refers to rival companies who pose a threat because they might benefit from leaked information.
+		State actors are government intelligence agencies.
+		Criminal syndicates refer to organized groups of people who make money from criminal activity.
+		Insider threats can be any individual who has or had authorized access to an organization’s resources.
+			This includes employees who accidentally compromise assets or individuals who purposefully put them at risk for their own benefit.
+		Shadow IT refers to individuals who use technologies that lack IT governance. A common example is when an employee uses their personal email to send work-related communications.
+	
+	Types of hackers
+		Unauthorized hackers
+		Authorized ethical hackers
+		Semi authorized
+		
+		For example, there are hackers with limited skills who can’t write their own malicious software, sometimes called script kiddies.
+		Unauthorized hackers like this carry out attacks using pre-written code that they obtain from other, more skilled hackers.
+		
+		They also include external security vendors and freelance hackers that some companies incentivize to find and report vulnerabilities, a practice called bug bounty programs.
+	
+		hacktivist is a person who might use their skills to achieve a political goal.
+			One might exploit security vulnerabilities of a public utility company to spread awareness of their existence.
+			
+		advanced persistent threat (APT)
+			refers to instances when a threat actor maintains unauthorized access to a system for an extended period of time.
+			
+	Access points
+		
+		Direct access, referring to instances when they have physical access to a system
+		Removable media, which includes portable hardware, like USB flash drives
+		Social media platforms that are used for communication and content sharing
+		Email, including both personal and business accounts
+		Wireless networks on premises
+		Cloud services usually provided by third-party organizations
+		Supply chains like third-party vendors that can present a backdoor into systems
+		
+	Practicing an attacker mindset
+		Identify a target
+		determine how the targer can be accessed
+		evaluate attack vectors that can be exploited
+		find the tools that would be used in the attack
+		
+	Defending attack vectors
+		educating users
+		applying the principle of least privilege
+		using the right security controls and tools
+		building a diverse security team
+	
+Fortify against brute force cyber attacks
+	
+	Reverse brute force attacks are similar to dictionary attacks, except they start with a single credential and try it in various systems until a match is found.
+	
+	Credential stuffing is a tactic in which attackers use stolen login credentials from previous data breaches to access user accounts at another organization.
+		A specialized type of credential stuffing is called pass the hash.
+	Besides access credentials, encrypted information can sometimes be brute forced using a technique known as exhaustive key search.
+	
+	Tools of the trade
+		Aircrack-ng
+		Hashcat 
+		John the Ripper
+		Ophcrack
+		THC Hydra
+	
+	Prevention measures
+		Hashing and salting
+		Multi-factor authentication (MFA)
+		CAPTCHA
+		Password policies

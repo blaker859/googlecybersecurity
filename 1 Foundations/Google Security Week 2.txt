@@ -1,0 +1,181 @@
+Google Security
+
+	Worms duplicate and spread on their own
+		Brain Virus
+			disk virus that was meant to track malware, ended up infecting machines and any disk inserted
+		Morris Worm
+			created to assess the size of the internet
+			crawled the web and installed itself onto other computers
+			ended up reinstalling istelf until computers ran out of memory
+			10% of the internet infected
+		introduction of computer security incident response teams (CSIRTs)
+	Internet Malware
+		Love letter 
+			steals internet login credentials
+				attachment that scanned address book and sent same letter to all contacts
+				45,000,000 computers infected
+				social engineering
+		Equifax breach (2017)
+			143 million records stolen 40% of americans
+			multiple vulnerabilities
+			$575 million dollars
+	___________________________________________________________________________
+Business Email Compromise (BEC): A threat actor sends an email message that seems to be from a known source to make a seemingly legitimate request for information, in order to obtain a financial advantage.
+
+Spear phishing: A malicious email attack that targets a specific user or group of users. The email seems to originate from a trusted source.
+
+Whaling: A form of spear phishing. Threat actors target company executives to gain access to sensitive data.
+
+Vishing: The exploitation of electronic voice communication to obtain sensitive information or to impersonate a known source.
+
+Smishing: The use of text messages to trick users, in order to obtain sensitive information or to impersonate a known source.
+
+Viruses: Malicious code written to interfere with computer operations and cause damage to data, software, and hardware.
+ A virus attaches itself to programs or documents, on a computer. It then spreads and infects one or more computers in a network.
+	
+Ransomware: A malicious attack where threat actors encrypt an organization's data and demand payment to restore access. 
+
+Spyware: Malware that’s used to gather and sell information without consent. Spyware can be used to access devices.
+ This allows threat actors to collect personal data, such as private emails, texts, voice and image recordings, and locations.
+
+Social media phishing: A threat actor collects detailed information about their target from social media sites. Then, they initiate an attack.
+
+Watering hole attack: A threat actor attacks a website frequently visited by a specific group of users.
+
+USB baiting: A threat actor strategically leaves a malware USB stick for an employee to find and install, to unknowingly infect a network. 
+
+Physical social engineering: A threat actor impersonates an employee, customer, or vendor to obtain unauthorized access to a physical location.
+
+Authority: Threat actors impersonate individuals with power. This is because people, in general, have been conditioned to respect and follow authority figures. 
+
+Intimidation: Threat actors use bullying tactics. This includes persuading and intimidating victims into doing what they’re told. 
+
+Consensus/Social proof: Because people sometimes do things that they believe many others are doing, threat actors use others’ trust to pretend they are legitimate.
+ For example, a threat actor might try to gain access to private data by telling an employee that other people at the company have given them access to that data in the past. 
+
+Scarcity: A tactic used to imply that goods or services are in limited supply. 
+
+Familiarity: Threat actors establish a fake emotional connection with users that can be exploited.  
+
+Trust: Threat actors establish an emotional relationship with users that can be exploited over time. They use this relationship to develop trust and gain personal information.
+
+Urgency: A threat actor persuades others to respond quickly and without questioning.
+	___________________________________________________________________________
+	
+
+	8 Security Domains
+	CISSP
+		1. Security and Risk Management
+			Focusses on defining security goals and objectives risk mitigation, compliance, device continuity, and the law
+			The confidentiality, integrity and availability of information;
+			Security governance principles;
+			Compliance requirements;
+			Legal and regulatory issues relating to information security;
+			IT policies and procedures; and
+			Risk-based management concepts.
+			
+		2. Asset Security
+			Old equipment is properly wiped and destroyed. Securing Digital and Physical assets
+			responsible for ensuring that company servers are configured to securely store, maintain, and retain SPII
+			The classification and ownership of information and assets;
+			Privacy;
+			Retention periods;
+			Data security controls; and
+			Handling requirements.
+			
+		3. Security Architecture and Engineering
+			Ensuring effective tools, processes, systems
+			Engineering processes using secure design principles;
+			Fundamental concepts of security models;
+			Security capabilities of information systems;
+			Assessing and mitigating vulnerabilities in systems;
+			Cryptography; and
+			Designing and implementing physical security.
+			
+		4. Communication and Network Security
+			Manage and Secure physical networks and wireless communications
+			Secure design principles for network architecture;
+			Secure network components; and
+			Secure communication channels.
+			
+		5. Identity and Access Management
+			Keeps data secure, by ensuring users follow established policies to control and manage physical assets and logical assets like networks and apps
+			Physical and logical access to assets;
+			Identification and authentication;
+			Integrating identity as a service and third-party identity services;
+			Authorisation mechanisms; and
+			The identity and access provisioning lifecycle.	
+			
+		6. Security Assesment and Testing
+			Conducting Security Control Testing, Collecting and analyzing data, and conducting security audits to monitor for risks, threats, and vulnerabilities
+			ensures correct levels of access
+			Designing and validating assessment and test strategies;
+			Security control testing;
+			Collecting security process data;
+			Test outputs; and
+			Internal and third-party security audits.
+			
+		7. Security Operations
+			conducting investigations and implementing preventative measures
+			unknown device has been connected
+			Understanding and supporting investigations;
+			Requirements for investigation types;
+			Logging and monitoring activities;
+			Securing the provision of resources;
+			Foundational security operations concepts;
+			Applying resource protection techniques;
+			Incident management;
+			Disaster recovery;
+			Managing physical security; and
+			Business continuity.
+			
+		8. Software Development Security
+			use secure coding practices to create secure apps
+			Security in the software development life cycle;
+			Security controls in development environments;
+			The effectiveness of software security; and
+			Secure coding guidelines and standards.	
+			
+	___________________________________________________________________________
+Adversarial artificial intelligence is a technique that manipulates artificial intelligence and machine learning technology to conduct attacks more efficiently.
+	Adversarial artificial intelligence falls under both the communication and network security and the identity and access management domains.
+	
+A supply-chain attack targets systems, applications, hardware, and/or software to locate a vulnerability where malware can be deployed.
+ Because every item sold undergoes a process that involves third parties, this means that the security breach can occur at any point in the supply chain.
+ 
+A cryptographic attack affects secure forms of communication between a sender and intended recipient. Some forms of cryptographic attacks are: 
+	Birthday
+	Collision
+	Downgrade
+	Cryptographic attacks fall under the communication and network security domain.
+	
+A password attack is an attempt to access password-secured devices, systems, networks, or data.
+ Some forms of password attacks that you’ll learn about later in the certificate program are:  
+	Brute force
+	Rainbow table
+		Password attacks fall under the communication and network security domain. 
+ ___________________________________________________________________________
+Threat Actors
+Advanced persistent threats
+	Advanced persistent threats (APTs) have significant expertise accessing an organization's network without authorization.
+	APTs tend to research their targets (e.g., large corporations or government entities)  in advance and can remain undetected for an extended period of time.
+	 Their intentions and motivations can include:
+	Damaging critical infrastructure, such as the power grid and natural resources
+	Gaining access to intellectual property, such as trade secrets or patents
+	
+Insider threats
+	Insider threats abuse their authorized access to obtain data that may harm an organization. Their intentions and motivations can include: 
+	Sabotage
+	Corruption
+	Espionage
+	Unauthorized data access or leaks
+	
+Hacktivists
+	Hacktivists are threat actors that are driven by a political agenda. They abuse digital technology to accomplish their goals, which may include: 
+	Demonstrations
+	Propaganda
+	Social change campaigns
+	Fame
+
+End of Week 2
+ ___________________________________________________________________________

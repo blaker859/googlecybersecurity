@@ -1,0 +1,99 @@
+Automate Cybersecurity Tasks with Python Week 1
+
+	Basics of Programming
+	Data types
+	Variables
+	Conditional Statements
+	Iterative statements
+	
+Introduction to Python programming in Cybersecurity
+
+	Python and Cybersecurity
+		Resembles human language
+		Less code
+		Easy to read
+		Standard guidelines
+		Online Support
+		Built-in code
+		
+	Automation:
+		Log analysis
+		Malware analysis
+		Access control list management
+		Intrusion detection
+		Compliance checks
+		Network scanning
+		
+
+Core Python Components
+	Integer
+		no decimal point
+	
+	Boolean
+		true or false
+		
+	List data
+		sequential form of data
+		
+	float
+		decimal places
+	
+	Dictionary
+		Dictionary data is data that consists of one or more key-value pairs. Each key is mapped to a value. A colon (:) is placed between the key and value.
+		{1: "East", 2: "West"}
+		
+	Set
+		In Python, set data is data that consists of an unordered collection of unique values. This means no two values in a set can be the same. 
+		
+Variables
+	Container that stores data
+	
+	assignment:
+		device_id = "h32rb17"
+		
+	type()
+		returns data type of input
+		
+
+Conditional and Iterative Statements
+	if
+		starts conditional statement
+			called the header
+		
+	should be indented at least one space
+	
+	Operators
+		<,>,>=,<=,==,!=
+	
+	else
+		evaluates when previous are false
+		
+	elif statements
+		if status == 200:
+
+			print("OK")
+
+		elif status == 400:
+			
+			print("Bad Request")
+			
+	For Loops
+		for i in [1,2,3,4]:
+			print(i)
+			
+		range(0,10)
+			sets a sequence from 1-9
+			if no start point it starts from 0
+			
+	While loops
+		repeats output until true
+		while time <=10:
+		
+	break
+		When you want to exit a for or while loop based on a particular condition in an if statement being True
+		, you can write a conditional statement in the body of the loop and write the keyword break in the body of the conditional.
+		
+	continue
+		When you want to skip an iteration based on a certain condition in an if statement being True
+		, you can add the keyword continue in the body of a conditional statement within the loop. 
+		

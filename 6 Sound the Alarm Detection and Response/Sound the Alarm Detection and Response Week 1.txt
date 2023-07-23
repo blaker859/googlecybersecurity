@@ -1,0 +1,166 @@
+Sound the Alarm Detection and Response Week 1
+
+Incident Response Lifecycle
+		
+		Identify
+		Protect
+		Detect
+		Respond
+		Recover
+		
+	5Ws:
+		Who triggered the incident
+		What happened
+		When the incident took place
+		Where the incident took Place
+		Why the incedent occured
+		
+	Incident Handlers Journal
+		form of documentation used for a response
+		
+Incedent Response Operations
+		
+	Computer Security Incident Response Teams (CSIRT)
+		a specialized group of security professionals that are trained in incident management and response
+			
+			Security Analyst
+			Technical Lead (ops lead)
+			Incident coordinator (HRT) (SIRT)
+			
+			
+Roles and Resopnse
+		Preparation
+		Detection and Analysis
+		Containment, Eradication, and Recovery
+		Post-incident activity
+	
+	Command, control, and communication
+		Command
+			refers to having the appropriate leadership and direction to oversee the response.
+		Control 
+			refers to the ability to manage technical aspects during incident response, like coordinating resources and assigning tasks.
+		Communication 
+			refers to the ability to keep stakeholders informed.
+			
+	Security operations center
+		organizational unit dedicated to monitoring networks, systems, and devices for security threats or attacks
+		A SOC is involved in various types of blue team activities, such as network monitoring, analysis, and response to incidents. 
+		
+	Tier 1 SOC analyst
+		Monitoring, reviewing, and prioritizing alerts based on criticality or severity
+		Creating and closing alerts using ticketing systems
+		Escalating alert tickets to Tier 2 or Tier 3
+		
+	Tier 2 SOC analyst
+		Receiving escalated tickets from L1 and conducting deeper investigations
+		Configuring and refining security tools
+		Reporting to the SOC Lead
+		
+	Tier 3 SOC lead
+		Managing the operations of their team
+		Exploring methods of detection by performing advanced detection techniques, such as malware and forensics analysis
+		Reporting to the SOC manager
+		
+	SOC manager
+		Hiring, training, and evaluating the SOC team members
+		Creating performance metrics and managing the performance of the SOC team
+		Developing reports related to incidents, compliance, and auditing
+		Communicating findings to stakeholders such as executive management   
+		
+	SOCs can also contain other specialized roles such as: 
+		Forensic investigators: Forensic investigators are commonly L2s and L3s who collect, preserve, and analyze digital evidence related to security incidents to determine what happened.
+		Threat hunters: Threat hunters are typically L3s who work to detect, analyze, and defend against new and advanced cybersecurity threats using threat intelligence.
+		
+		
+Incident Response Plans
+	documents outlining the procedures to take
+		Elements of an incident plan
+			incident response procedures
+			system information
+			other documents
+			
+
+	Elements of a security plan
+		Policies
+		Standards
+		Procedures
+		
+		
+Incedent Resonse tools
+			
+	Incident Response Tools
+			detection and management tools
+			documentation tools
+			investigation tools
+			
+		Documentation
+			any form of recorded content used for a specific purpose
+			
+			Playbooks
+			Incident handler's journals
+			policies
+			plans 
+			final reports
+			
+		Word Processor tools
+			Google Docs
+			Onenote
+			evernote
+			Notepad++
+			
+		Ticketing System
+			jira
+			
+		Other tools
+			google sheets
+			audio recorders
+			cameras
+			
+	Intrusion detection systems
+			an application that monitors system and network activity and produces alerts
+		
+		IPS
+			monitor system activity and take action to stop it
+				snort
+				zeek kismet
+				sagan
+				suricata
+				
+		Endpoint detection and response (EDR)
+			is an application that monitors an endpoint for malicious activity.
+			EDR tools are installed on endpoints. 
+				Remember that an endpoint is any device connected on a network. Examples include end-user devices, like computers, phones, tablets, and more.
+				
+			Open EDR®
+			Bitdefender™ 
+			Endpoint Detection and Response
+			FortiEDR™
+			
+		
+	Alert and event management with SIEM and SOAR tools
+		collects and analyzed log data
+		
+		SIEM process
+			collect and aggregate data
+			Normalize data
+				raw data cleans up and gets rid of uneeded details
+			analyze data
+				configured rules
+				alerts
+		
+			Tools
+				AlienVault® OSSIM™
+				Chronicle
+				Elastic
+				Exabeam
+				IBM QRadar® Security Intelligence Platform
+				LogRhythm
+				Splunk
+							
+		SOAR tools (Security orchestration, automation, and response)
+			a collection of applications, tools, and workflows that uses automation to respond to security events
+			
+			Automates analysis and response to security alerts
+			tracks cases
+		
+	

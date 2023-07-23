@@ -1,0 +1,203 @@
+Networks and Network Security 2
+
+	Tools and Protocols
+		identifying an attack by using the improper protocol
+	
+	Network Protocols
+		a set of rules used by two or more devices on a network to describe the order of delivery and the structure of the data
+	TCP
+		internet protocol
+		handshake then request
+		First, the device sends a synchronize (SYN) request to a server. Then the server responds with a SYN/ACK packet to acknowledge receipt of the device's request. 
+	
+	Address Resolution Protocol (ARP)
+		network protocol to determine the MAC address of the next router or device on the path
+	
+	HTTPS
+		secure method of communication between clients and website servers
+	
+	DNS
+		translates domain names to their ip addresses
+	
+	Security Protocols
+		HTTPS
+			encrypts data using SSL/TLS
+		a nefarious actor could use the Domain Name System (DNS) protocol to divert traffic from a legitimate website to a malicious website containing malware.
+	
+	Communication protocols
+		Transmission Control Protocol (TCP)
+			Then the server responds with a SYN/ACK packet to acknowledge receipt of the device's request.
+			Once the server receives the final ACK packet from the device, a TCP connection is established. 
+	
+	Management Protocols
+		Simple Network Management Protocol (SNMP)
+			SNMP can reset a password on a network device or change its baseline configuration.
+			It can also send requests to network devices for a report on how much of the network’s bandwidth is being used up.
+		Internet Control Message Protocol (ICMP)
+			used by devices to tell each other about data transmission errors across the network.
+			ICMP is used by a receiving device to send a report to the sending device about the data transmission.
+			ICMP is commonly used as a quick way to troubleshoot network connectivity and latency by issuing the “ping” command on a Linux operating system.
+			In the TCP/IP model, ICMP occurs at the internet layer.
+	
+	Security Protocols
+		HTTPS
+		Secure FIle Transfer Protocol (SFTP)
+			is a secure protocol used to transfer files from one device to another over a network. SFTP uses secure shell (SSH), typically through TCP port 22.
+			
+	Network Address Translation (NAT)
+		the router can replace a private source IP address with its public IP address and perform the reverse operation for responses.
+		 NAT is a part of layer 2 (internet layer) and layer 3 (transport layer) of the TCP/IP model.
+		 
+	Dynamic Host Configuration Protocol (DHCP)
+			 It assigns a unique IP address and provides the addresses of the appropriate DNS server and default gateway for each device.
+			 DHCP servers operate on UDP port 67 while DHCP clients operate on UDP port 68.
+	
+	Address Resolution Protocol
+		an internet layer protocol in the TCP/IP model used to translate the IP addresses that are found in data packets into the MAC address of the hardware device. 
+		
+	Telnet 
+		Telnet is an application layer protocol that allows a device to communicate with another device or server.
+		Not secure
+		port 23
+		
+	Secure shell
+		Secure shell protocol (SSH) is used to create a secure connection with a remote system. 22
+		
+	Post office protocol
+		application layer (layer 4 of the TCP/IP model) protocol used to manage and retrieve email from a mail server. 
+		
+	Internet Message Access Protocol (IMAP)
+		It downloads the headers of emails, but not the content. 
+		IMAP uses TCP port 143 for unencrypted email and TCP port 993 over the TLS protocol.
+		IMAP is slower than POP3.
+		993
+	
+	Simple Mail Transfer Protocol
+		(SMTP) is used to transmit and route email from the sender to the recipient’s address. 
+		port 25 - unencrypted emails
+		587 for TLS encrypted
+		
+	TLS 
+		a cryptographic protocol that provides end-to-end security of data sent between applications over the Internet.
+		
+	IEEE 802.11 (WIFI)
+		standards for wireless communication
+		
+	Wifi Protected Access (WPA)
+		wireless security protocol for wireless connections
+		Wi-Fi refers to a set of standards that define communication for wireless LANs.
+		Wi-Fi is a marketing term commissioned by the Wireless Ethernet Compatibility Alliance (WECA).
+		WECA has since renamed their organization Wi-Fi Alliance
+	
+	Wired Equivalent Privacy
+		(WEP) is a wireless security protocol designed to provide users with the same level of privacy on wireless network connections as they have on wired network connections.
+		old 1999
+	
+	Wi-Fi Protected Access
+		(WPA) was developed in 2003 to improve upon WEP
+		Addressed Flaws in WEP
+			Temporal Key Integrity Protocol(TKIP)
+			Longer security keys
+			WPA also includes a message integrity check that includes a message authentication tag with each transmission.
+		Malicious actors can use a key reinstallation attack (or KRACK attack) to decrypt transmissions using WPA.
+	
+	WPA2
+		improves upon WPA by using the Advanced Encryption Standard (AES).
+		WPA2 uses the Counter Mode Cipher Block Chain Message Authentication Code Protocol (CCMP)
+		which provides encapsulation and ensures message authentication and integrity.
+			Personal
+				WPA2 personal mode is best suited for home networks
+				The global passphrase for WPA2 personal version needs to be applied to each individual computer and access point in a network.
+	
+	WPA3
+		WPA3 is a secure Wi-Fi protocol and is growing in usage as more WPA3 compatible devices are released.
+		WPA3 addresses the authentication handshake vulnerability to KRACK attacks, which is present in WPA2. 
+		WPA3 uses Simultaneous Authentication of Equals (SAE), a password-authenticated, cipher-key-sharing agreement.
+			This prevents attackers from downloading data from wireless network connections to their systems to attempt to decode it.
+		WPA3 has increased encryption to make passwords more secure  by using 128-bit encryption, with WPA3-Enterprise mode offering optional 192-bit encryption.
+		
+		
+	Firewalls and Network Security Measures
+		Firewall
+			monitors traffic to and from
+		Port Filtering
+			only allowing certain ports
+		Hardware Firewall
+			most basic
+			inspects each data packet
+		Software Firewall
+			analyze all traffic recieved by computer or server
+			adds processing burden
+		Cloud Firewall
+			FAAS
+			software firewall hosted by cloud
+		Stateful
+			keeps track of info pasing through and acts on it
+		Stateless
+			predifined rules,  no reacting to data packets or storing them
+			less secure
+		NGFW (next gen firewall)
+			in depth
+			deep packet inspection
+			intrusion protection
+			threat intelligence
+		
+	(VPN) Virtual Private Network
+		changes your public ip and hides virtual location
+		keep data private
+		encrypts data
+		Encapsulation
+			wrapping sensitive data in other data packets
+			unreadable in transit
+		
+	Security Zones
+		segment of a network that protects the internal network from the outside
+		network segments
+			divides network into segments
+		Subnets
+			privacy for each network
+			example:
+				faculty and student
+			Uncontrolled Zone
+				outside 
+			Controlled Zone
+				protects internal from outer
+				DMZ
+					web servers
+					proxy servers
+					dns servers
+					email
+					file
+					network perimiter to the internal network
+				Internal Network
+				Restricted Zone inside internal network
+					accessible to employees with certain permissions
+				architecutre
+					internet firewall dmz firewall internal network firewall restricted zone
+					restricitng ips and ports
+				
+	Subnetting and CIDR notation
+		Subnetting
+			the subdivision of a network into logical groups called subnets.
+		Classless Inter-Domain Routing notation for subnetting (CIDR)
+			method of assigning subnet masks to IP addresses to create a subnet
+			Class A to E
+			expandd the number of available IPv4 addresses
+			CIDR IP addresses are formatted like IPv4 addresses, but they include a slash (“/’”) followed by a number at the end of the address
+				called the IP network prefix
+			
+	Proxy Servers
+		securing internal networks
+		a server that fulfills the request of a client by forwarding them on to other servers
+		sits between the internet and the rest of the network
+		block unsafe websites
+		temporary memory to store data requested from external servers
+		limiting contact with internal servers
+	Forward Proxy Server
+		regulates and restricts a persons access to the internet
+		goal is to hide a users ip and approve outgoing requests
+	Reverse Proxy Server
+		restricts internets acces to an internal server
+	
+	Virtual Networks and Privacy
+		

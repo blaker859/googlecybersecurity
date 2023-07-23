@@ -1,0 +1,84 @@
+Manage Security Risks Week 1
+
+CISSPs eight Security Domains
+	Security Posture
+		ability to manage its defense of critical assets and react to change
+	Security and Risk Management
+		defining security goals and objectives
+		Business Continuity 
+			ability to maintain daily business operations
+		
+	Asset Security
+		
+	Security Architecture and Engineering
+		Shared responsibility
+			all individuals within an organization take an active role mitigating security risks
+	Communication and Network Security
+		managing and securing networks
+	Identity and Access Management
+		(IAM)
+		focussed on access and authorization
+		Identification
+		Authentication
+			verification process (password/pin)
+		Authorization
+		Accountability
+	Security Assessment and Testing
+		Focused on conduction security control testing, collecting and analyzing data to find vulnerabilities
+	Security Operations
+		Focused on conducting investigations and implementing preventative measures
+	Software Development Security
+		focussed on using secure software development
+	
+Security Frameworks and Controls
+	Managing Risks
+		Acceptance: Accepting a risk to avoid disrupting business continuity
+		Avoidance: Creating a plan to avoid the risk altogether
+		Transference: Transferring risk to a third party to manage
+		Mitigation: Lessening the impact of a known risk
+	Threats
+		Advanced persistent threats (APTs): A threat actor maintains unauthorized access to a system for an extended period of time.
+	RMF (Risk Management Framework)
+		Prepare
+			Monitor for risks, find controls
+		Categorize
+			Develop risk management process and tasks
+		Select
+			choose, customize, and capture
+			keeping a playbook up to date
+			managing documentation
+		Implement
+			execute security plans
+		Assess
+		Authorize
+			being accountable for the security and privacy risks that may exist
+			generating reports
+		Monitor
+			be aware of how systems are operating
+	Vulnerabilities
+		A vulnerability is a weakness that can be exploited by a threat.
+		Therefore, organizations need to regularly inspect for vulnerabilities within their systems. Some vulnerabilities include:
+		ProxyLogon: 
+			A pre-authenticated vulnerability that affects the Microsoft Exchange server.
+			This means a threat actor can complete a user authentication process to deploy malicious code from a remote location.
+		ZeroLogon:
+			A vulnerability in Microsoft’s Netlogon authentication protocol.
+			An authentication protocol is a way to verify a person's identity.
+			Netlogon is a service that ensures a user’s identity before allowing access to a website's location.
+		Log4Shell:
+			Allows attackers to run Java code on someone else’s computer or leak sensitive information.
+			It does this by enabling a remote attacker to take control of devices connected to the internet and run malicious code.
+		PetitPotam:
+			Affects Windows New Technology Local Area Network (LAN) Manager (NTLM).
+			It is a theft technique that allows a LAN-based attacker to initiate an authentication request.
+		Security logging and monitoring failures:
+			Insufficient logging and monitoring capabilities that result in attackers exploiting vulnerabilities without the organization knowing it
+		Server-side request forgery:
+			Allows attackers to manipulate a server-side application into accessing and updating backend resources.
+			It can also allow threat actors to steal data.
+
+Security Audits
+	
+Basic Security Tools
+	
+Protect Assets and Data

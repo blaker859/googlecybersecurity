@@ -1,0 +1,167 @@
+Networks and Network Security 4
+
+Security Hardening
+Network Hardening
+Network Hardening Practices
+Cloud Hardening
+		
+	Security Analysts responsibilites
+		Patch updates
+		Backups
+		
+	Security Hardening
+		process of strengthening a system to reduce its bulnerability and stack surface
+		
+	Attack Surface
+		potential vulnerabilities a threat actor could exploit
+		
+	Security hardening can be conducted on
+		hardware
+		operating systems
+		applications
+		computer networks
+		databases
+		
+	Ex:
+		upgrading encryption standards
+		requiring longer/ more frequent passwords
+		disabling unused ports
+		disabling or removing applications/services
+		reducing access permissions
+		
+	Regular Pen Testing
+		simulated attack to help identify vulnerabilities
+	
+OS Hardening
+	intermediary between software applications and hardware
+	
+	updates, backups, list of devices and users
+
+	Patch installation
+		os update that addresses security vulnerabilities in a program or product
+		as soon as update comes, old patch is vulnerable
+
+	Baseline image
+		documented set of specifications within a system that is used as a basis for future builds, releases, and updates
+		
+	Hardware and Software Disposal
+		delete unused software
+		
+MFA
+	requres you to verify identity in two or more ways	
+		Something you know
+		something you have
+		something unique to you
+		
+Network Hardening
+	
+	port filtering
+		firewall function that blocks or allows certain port numbers to limit unwanted communication
+		old protocols should be disabled
+	network access privilege
+	encryption
+		
+	
+	Tasks:
+		firewall rules
+		network log analysts
+		patch updates
+		server backups
+		
+	Network Log Analys
+		examining network logs to identify events of interest
+		
+	SIEM tool
+		collect and analyzed log data
+		
+
+	Simple brute force attack
+		When attackers try to guess a user's login credentials
+		
+	Dictionary Attack
+		attackers use a list of commonly used passwords and stolen credentials from previous breaches to access a system.
+		These are called “dictionary” attacks because attackers originally used a list of words from the dictionary to guess the passwords
+		
+	Assessing vulnerabilities
+		analysts can use virtual machines and sandboxes to test suspicious files
+		check for vulnerabilities
+		simulate a cybersecurity incident
+		
+	Prevention measures
+		Salting and Hasing
+			Hashing converts information into a unique value that can then be used to determine its integrity
+			Salting adds random characters to hashed passwords
+			
+	CAPTCHA and reCAPTCHA:
+		CAPTCHA stands for Completely Automated Public Turing test to tell Computers and Humans Apart
+		
+	Network Security Applications
+		firewall
+			stateful
+			stateless
+			ngfw
+			
+		an intrusion detection
+			application that monitors system activity and alerts on possible intrusions.
+			An IDS alerts administrators based on the signature of malicious traffic
+			IDS systems often sniff data packets as they move across the network and analyze them for the characteristics of known attacks
+			New and sophisticated attacks might not be caught.
+			The other limitation is that the IDS doesn’t actually stop the incoming traffic
+			The IDS is placed behind the firewall and before entering the LAN
+			
+		intrusion prevention device
+			monitors system activity for intrusive activity and takes action to stop the activity. It offers even more protection than an IDS because it actively stops anomalies when they are detected
+			unlike the IDS that simply reports the anomaly to a network administrator
+			The IPS (like an IDS) sits behind the firewall in the network architecture
+			However, one potential limitation is that it is inline: If it breaks, the connection between the private network and the internet breaks.
+			Another limitation of IPS is the possibility of false positives, which can result in legitimate traffic getting dropped
+			
+		full packet capture devices
+			These devices allow you to record and analyze all of the data that is transmitted over your network.
+			They also aid in investigating alerts created by an IDS. 
+			
+		security information and event monitoring
+			collects and analyzes log data to monitor critical activities in an organization
+			SIEM tools additionally analyze network log data sourced from IDSs, IPSs, firewalls, VPNs, proxies, and DNS logs
+			
+		
+Cloud Hardening
+	stores data and resources in remote data centers that can be accessed by the internet
+	storing baseline images to compare
+	older applications kept separate
+	internal kept separate
+	
+	Cloud security considerations
+	
+		Identity access management (IAM)
+			a collection of processes and technologies that helps organizations manage digital identities in their environment.
+			This service also authorizes how users can use different cloud resources.
+			A common problem that organizations face when using the cloud is the loose configuration of cloud user roles
+			
+		Configuration
+			The number of available cloud services adds complexity to the network. Each service must be carefully configured to meet security and compliance requirements.
+			This presents a particular challenge when organizations perform an initial migration into the cloud.
+			When this change occurs on their network, they must ensure that every process moved into the cloud has been configured correctly
+			
+		Attack Surface
+			Every service or application on a network carries its own set of risks and vulnerabilities and increases an organization’s overall attack surface.
+			An increased attack surface must be compensated for with increased security measures.
+			
+		Zero-day attacks
+			Zero-day attacks are an important security consideration for organizations using cloud or traditional on-premise network solutions.
+			A zero day attack is an exploit that was previously unknown.
+			CSPs are more likely to know about a zero day attack occurring before a traditional IT organization does.
+			CSPs have ways of patching hypervisors and migrating workloads to other virtual machines.
+			These methods ensure the customers are not impacted by the attack.
+			There are also several tools available for patching at the operating system level that organizations can use.
+			
+		Visibility and tracking 
+			Network administrators have access to every data packet crossing the network with both on-premise and cloud networks.
+			They can sniff and inspect data packets to learn about network performance or to check for possible threats and attacks.
+		
+		Shared responsibility model
+			A commonly accepted cloud security principle is the shared responsibility model.
+			The shared responsibility model states that the CSP must take responsibility for security involving the cloud infrastructure, including physical data centers, hypervisors, and host operating systems.
+			The company using the cloud service is responsible for the assets and processes that they store or operate in the cloud.
+			
+		

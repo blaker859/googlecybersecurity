@@ -1,0 +1,86 @@
+Google Security Week 3
+
+Security Frameworks
+	Goals
+		setting goals
+	Guidelines
+		creating guidelines of reaching those goals
+	Processes
+		creating effective processes
+	Results
+		monitoring and communicating results
+		
+Security Controls
+	tools to help reach security goals
+	
+Well known frameworks and Processes
+	CIA Triad
+		Confidentiality
+		Integrity
+			data is correct, authentic, and reliable
+		Availability
+			Data is accessible to those who are authorized to access it
+	NIST Cybersecurity Framework
+		standards, guidelines, processes
+		baseline to protect from security risks
+		
+	NIST RMF
+		Prepare	
+			Essential activities to prepare the organization to manage security and privacy risks 
+		Categorize	
+			Categorize the system and information processed, stored, and transmitted based on an impact analysis
+		Select	
+			Select the set of NIST SP 800-53 controls to protect the system based on risk assessment(s)
+		Implement	
+			Implement the controls and document how controls are deployed
+		Assess	
+			Assess to determine if the controls are in place, operating as intended, and producing the desired results
+		Authorize	
+			Senior official makes a risk-based decision to authorize the system (to operate)
+		Monitor	
+			Continuously monitor control implementation and risks to the system
+			
+	The Federal Energy Regulatory Commission - North American Electric Reliability Corporation (FERC-NERC)
+		FERC-NERC is a regulation that applies to organizations that work with electricity or that are involved with the U.S. and North American power grid.
+		
+	The Federal Risk and Authorization Management Program (FedRAMP®)
+		FedRAMP is a U.S. federal government program that standardizes security assessment, authorization, monitoring, and handling of cloud services and product offerings. 
+		
+	Center for Internet Security (CIS®)
+		CIS is a nonprofit with multiple areas of emphasis. It provides a set of controls that can be used to safeguard systems and networks against attacks.
+		
+	General Data Protection Regulation (GDPR)
+		GDPR is a European Union (E.U.) general data regulation that protects the processing of E.U. residents’ data and their right to privacy in and out of E.U. territory.
+		
+	Payment Card Industry Data Security Standard (PCI DSS)
+		PCI DSS is an international security standard meant to ensure that organizations storing, accepting, processing, and transmitting credit card information do so in a secure environment. 
+		
+	The Health Insurance Portability and Accountability Act (HIPAA)
+		HIPAA is a U.S. federal law established in 1996 to protect patients' health information. This law prohibits patient information from being shared without their consent. It is governed by three rules: 
+			Privacy
+			Security 
+			Breach notification 
+	
+	International Organization for Standardization (ISO) 
+		ISO was created to establish international standards related to technology, manufacturing, and management across borders.
+		
+	System and Organizations Controls (SOC type 1, SOC type 2)
+		The American Institute of Certified Public Accountants® (AICPA) auditing standards board developed this standard. The SOC1 and SOC2 are a series of reports that focus on an organization's user access policies at different organizational levels such as: 
+			Associate
+			Supervisor
+			Manager
+			Executive
+			Vendor 
+			Others 
+			
+		Security Ethics
+			guidelines for making appropriate decisions
+		
+		Confidentiality
+			keeping information secure and confidential
+		Privacy Protections
+			safeguarding personal info from unauthorized use
+		Laws
+			rules recognized by a community and enforced by a gov entity
+	
+	

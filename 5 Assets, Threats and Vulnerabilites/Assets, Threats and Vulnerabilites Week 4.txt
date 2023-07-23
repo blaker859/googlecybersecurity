@@ -1,0 +1,319 @@
+Assets, Threats and Vulnerabilites Week 4
+
+Social Engineering
+
+
+	The criminal art of persuasion
+		Social Engineering
+			a manipulation technique that exploites human error to gain private information, access, or valuables
+		
+		Stages of Social Engineering
+			Prepare
+				gather info about target
+			establish trust
+				pretexting
+			use persuasion tactics
+				manipulates target into volunteering info, techinical language
+			disconnect from the target
+				disapear to cover tracks
+		
+		Preventing social engineering
+			implementing managerial controls
+			staying informed of trends
+			sharing your knowledge with others
+			
+			
+	Social Engineering Tactics
+		
+			Baiting 
+			is a social engineering tactic that tempts people into compromising their security.
+			A common example is USB baiting that relies on someone finding an infected USB drive and plugging it into their device.
+
+			Phishing is the use of digital communications to trick people into revealing sensitive data or deploying malicious software.
+			It is one of the most common forms of social engineering, typically performed via email.
+
+			Quid pro quo
+				is a type of baiting used to trick someone into believing that they’ll be rewarded in return for sharing access, information, or money. 
+				For example, an attacker might impersonate a loan officer at a bank and call customers offering them a lower interest rate on their credit card. 
+				They'll tell the customers that they simply need to provide their account details to claim the deal.
+
+			Tailgating 
+				is a social engineering tactic in which unauthorized people follow an authorized person into a restricted area. 
+				This technique is also sometimes referred to as piggybacking.
+
+			Watering hole 
+				is a type of attack when a threat actor compromises a website frequently visited by a specific group of users. 
+				Oftentimes, these watering hole sites are infected with malicious software. An example is the Holy Water attack of 2020 that infected various religious, charity, and volunteer websites.
+				
+		Encouraging caution
+			Stay Alert
+			Be Cautious
+			Control Curiosity
+			
+		Pro tip: 
+			Implementing technologies like firewalls, multi-factor authentication (MFA), block lists, email filtering, and others helps layers the defenses should someone make a mistake.
+			
+			
+	Phishing
+		the use of digital communications to trick people into revealing sesnitive data or deploying malicious software
+			
+		Typically attacks that arrive by email
+		
+		Phishing Kit
+			a collection of software tools needed to launch a phishing campaign
+				Malicious attachments
+					infected files 
+				Fake data-collection forms
+					look legitimate but ask for sensitive info
+				Fradulent web links
+		
+		Smishing
+			use of text messages to gain sensitive info
+			using local area codes
+			
+		Vishing
+			electronic voice communication to pretend to be someone their not
+			claims of problems with account and they can help you if you give them sensitive info
+			
+		Spear phishing
+			is a subset of email phishing in which specific people are purposefully targeted, such as the accountants of a small business.
+
+		Whaling 
+			refers to a category of spear phishing attempts that are aimed at high-ranking executives in an organization.	
+		
+		Angler phishing 
+			is a technique where attackers impersonate customer service representatives on social media. This tactic evolved from people’s tendency to complain about businesses online.
+			Threat actors intercept complaints from places like message boards or comment sections and contact the angry customer via social media.
+			
+		Phishing Security Measures
+			anti phishing policies
+			employee training resources
+			email filters
+				specific email addresses can be blocked
+				or allow lists
+			intrusion prevention systems
+			
+			
+	Malware
+		Malicious Software
+			Virus
+				Malicious code written to interfere with computer operations and cause damage to data and software
+				Clones itself and goes to other software
+				
+			Worm
+				duplicate and spread itself to everything on a network
+				
+			Trojan
+				malware that looks like a legitimate application
+				disguiesed as files or useful applications
+				
+			Ransomware
+				type of malicious atatck where attackers encrypt an organizations data and demand payment to restore access
+				they make themselves known to the targets
+				
+			Spyware
+				malware thats used to gather and sell information without consent
+		
+		
+	An introduction to malware
+			Note: Worms were very popular attacks in the mid 2000s but are less frequently used in recent years.
+		
+		Adware
+			Advertising-supported software, or adware, is a type of legitimate software that is sometimes used to display digital advertisements in applications.
+			Software developers often use adware as a way to lower their production costs or to make their products free to the public—also known as freeware or shareware.
+				Malicious adware falls into a sub-category of malware known as a potentially unwanted application (PUA). 
+					A PUA is a type of unwanted software that is bundled in with legitimate programs which might display ads, cause device slowdown, or install other software.
+	
+		Spyware
+			is malware that's used to gather and sell information without consent. It's also considered a PUA.
+			Spyware is commonly hidden in bundleware, additional software that is sometimes packaged with other applications.
+			
+		Scareware
+			Another type of PUA is scareware. This type of malware employs tactics to frighten users into infecting their own device. 
+			Scareware tricks users by displaying fake warnings that appear to come from legitimate companies. 
+			Email and pop-ups are just a couple of ways scareware is spread.
+			Both can be used to deliver phony warnings with false claims about the user's files or data being at risk.
+			
+		Fileless malware
+			This type of infection resides in memory where the malware never touches the hard drive.
+			This is unlike the other types of malware, which are stored within a file on disk.
+			Instead, these stealthy infections get into the operating system or hide within trusted applications.
+				Pro tip: Fileless malware is detected by performing memory analysis, which requires experience with operating systems. 
+				
+		Rootkits
+			A rootkit is malware that provides remote, administrative access to a computer.
+			Most attackers use rootkits to open a backdoor to systems, allowing them to install other forms of malware or to conduct network security attacks.
+			This kind of malware is often spread by a combination of two components: a dropper and a loader.
+				A dropper is a type of malware that comes packed with malicious code which is delivered and installed onto a target system.
+				A loader is a type of malware that downloads strains of malicious code from an external source and installs them onto a target system.
+			Attackers might use loaders for different purposes, such as to set up another type of malware---a botnet.
+			
+		Botnet
+			“robot network,” is a collection of computers infected by malware that are under the control of a single threat actor, known as the “bot-herder.” 
+			Viruses, worms, and trojans are often used to spread the initial infection and turn the devices into a bot for the bot-herder.
+			When a target unknowingly opens the malicious file, the computer, or bot, reports the information back to the bot-herder, who can execute commands on the infected computer.
+			
+	
+	The rise of cryptojacking
+		a form of malware that installs software to illegally mine crypto currency
+		
+		IDS
+			application that monitors system activity and alerts possible intrustions
+				new forms of malware can be undetected
+				
+		Signs of cryptojacking
+			slowdown
+			increased cpu usage
+			sudden system crashes
+			fast draining batteries
+			unusually high electricity costs
+			
+			
+	Web-Based Exploits
+		malicious code or behavior thats used to take advantage of coding flaws in a web application
+		
+		Cross-site scripting
+			injection attack
+				malicious code inserted into a vulnerable application
+			
+			Cross site scripting
+				an injection attack that inserts code into a vulnerable app or website application
+					html and javascript
+					geo location
+					session cookies
+			
+			Types of cross-site scripting
+				Reflected
+					an instance when malicious script is sent to the server and activated on the servers response
+					criminals send there target a weblink to a trusted response
+					sends http request to vulnerable server
+					reflected to users browsers
+					trusts response 
+					attacker has the data
+					
+				Stored
+					an instance when malicious script is injected directly to the server
+						infected elements activate the malicious code
+					
+				DOM-Based
+					(Document object model)
+					an instance when malicious script exists in the webpage a user loads
+						malicious script can be seen in the url
+						paramater values
+							?theme=light=<script>alert(1);</script>
+				
+		Exploitable gaps in databases
+			sql injection
+				executes unexptected queries on a database
+			
+			prepared statements
+				coding technique that executes SQL statements before passing them onto the database
+					code is validated making sure datatypes match and other options
+				
+		Prevent injection attacks				
+			
+			SQL injection categories
+				
+				In-band SQL injection
+					In-band, or classic, SQL injection is the most common type. 
+					An in-band injection is one that uses the same communication channel to launch the attack and gather the results.
+					If the search box is vulnerable to injection, an attacker could enter a malicious query that would be executed in the database, causing it to return sensitive information like user passwords. 
+					
+				Out-of-band SQL injection
+					uses a different communication channel  to launch the attack and gather the results.
+						For example, an attacker could use a malicious query to create a connection between a vulnerable website and a database they control. 
+						This separate channel would allow them to bypass any security controls that are in place on the website's server, allowing them to steal sensitive data
+					Note: Out-of-band injection attacks are very uncommon because they'll only work when certain features are enabled on the target server.
+					
+				Inferential SQL injection
+					Inferential SQL injection occurs when an attacker is unable to directly see the results of their attack.
+					Instead, they can interpret the results by analyzing the behavior of the system.
+						For example, an attacker might perform a SQL injection attack on the login form of a website that causes the system to respond with an error message.
+						Although sensitive data is not returned, the attacker can figure out the database's structure based on the error.
+					
+			
+			Injection Prevention
+				A key to preventing SQL injection attacks is to escape user inputs—preventing someone from inserting any code that a program isn't expecting.
+			
+				Prepared statements:
+					a coding technique that executes SQL statements before passing them on to a database
+				Input sanitization:
+					programming that removes user input which could be interpreted as code.
+				Input validation:
+					programming that ensures user input meets a system's expectations.
+				
+		
+	Threat modeling
+			the process of identifying assets, their vulnerabilities, and how each is exposed to threats
+			
+			Steps:
+				1 define the scope
+				2 identify threat actors
+					Attack tree
+						diagram that maps threats to assets
+				3 characterize the environment
+				4 analyze threats
+				5 how to mitigate risks
+					avoid risk, reduce it, transfer it, or accept it
+				6 evaluate findings
+				
+		PASTA (Process for Attack Simulation and Threat Analysis)
+			a popular threat modeling framework
+			
+			Steps:
+			1 Define business and security objectives
+				how is pii handled
+			2 Define the technical scope
+				application components that must be evaluated
+				attack surface
+			3 Decompose the application
+				data flow diagram from devs
+				identify controls to protect data along the way
+			4 Perform threat analysis
+				attacker mindset
+				find attack vectors
+			5 Perform a vulnerability analysis
+				consider root of problem
+			6 Conduct attack modeling
+				simulate attacks
+				attack tree
+			7 Analyze risk and impact
+				compile info collected from 1-6
+				
+		Traits of an effective threat model
+			Log4j
+				An attacker who can control log messages or log message parameters can execute arbitrary code loaded from LDAP servers when message lookup substitution is enabled.
+					If it's not patched, this vulnerability can allow remote code execution that an attacker can use to gain full access to your system from anywhere in the world.
+			
+			Defending the application layer
+				Ideally, threat modeling should be performed before, during, and after an application is developed.
+				Note: Threat modeling should be incorporated at every stage of the software development lifecycle, or SDLC.
+
+			Common frameworks
+				
+				STRIDE 
+					is a threat-modeling framework developed by Microsoft. It’s commonly used to identify vulnerabilities in six specific attack vectors.
+					The acronym represents each of these vectors: spoofing, tampering, repudiation, information disclosure, denial of service, and elevation of privilege.
+				
+				Trike 
+					Trike is an open source methodology and tool that takes a security-centric approach to threat modeling.
+					It's commonly used to focus on security permissions, application use cases, privilege models, and other elements that support a secure environment.
+					
+				VAST
+					The Visual, Agile, and Simple Threat (VAST) Modeling framework is part of an automated threat-modeling platform called ThreatModeler®.
+					Many security teams opt to use VAST as a way of automating and streamlining their threat modeling assessments.
+					
+			Participating in threat modeling
+				
+				One of the keys to threat modeling is asking the right questions:
+
+				What are we working on?
+
+				What kinds of things can go wrong?
+
+				What are we doing about it?
+
+				Have we addressed everything?
+
+				Did we do a good job?
+				

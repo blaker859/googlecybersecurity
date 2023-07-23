@@ -1,0 +1,200 @@
+Networks and Network Security
+
+	network is a group of connected devices
+	LAN and WAN
+	LAN spans a small area house, office
+	WAN is wide area city, state, country
+	
+network tools
+hub
+			a network device broadcasts info to every device on a network
+Switch
+			controls the flow of traffic between specific devices on a network by sending and receiving data between them
+			only passes data to intended destination
+			It maintains a MAC address table that matches MAC addresses of devices on the network to port numbers on the switch
+			and forwards incoming data packets according to the destination MAC address.
+Router
+			connects multiple networks together
+
+Modem
+			a device that connects your router to the internet
+		Router -> Modem ->Modem -> Router
+
+virtualization tools
+		pieces of software that perform network operations
+	
+Servers
+		The devices that connect to a server are called clients
+	
+Wireless access point
+	A wireless access point sends and receives digital signals over radio waves creating a wireless network.
+	Devices with wireless adapters connect to the access point using Wi-Fi. 
+	
+Cloud Computing
+	practice of using remote servers, applications, and network services that are hosted on the internet instead of on local physical devices
+
+Cloud network
+	collection of servers or computers that stores resources and data in remote data centers that can be accessed via the internet
+
+Cloud offers
+	on demand storage
+	processing power
+	analytics
+
+Software as a service (SaaS)
+ refers to software suites operated by the CSP that a company can use remotely without hosting the software. 
+
+Infrastructure as a service (Iaas)
+ refers to the use of virtual computer components offered by the CSP.
+ These include virtual containers and storage that are configured remotely through the CSP’s API or web console.
+ Cloud-compute and storage services can be used to operate existing applications and other technology workloads without significant modifications.
+ Existing applications can be modified to take advantage of the availability, performance, and security features that are unique to cloud provider services.
+
+Platform as a service (PaaS)
+ refers to tools that application developers can use to design custom applications for their company.
+ Custom applications are designed and accessed in the cloud and used for a company’s specific business needs.
+
+Software-defined networks
+ made up of virtual network devices and services.
+ Just like CSPs provide virtual computers, many SDNs also provide virtual switches, routers, firewalls, and more.
+ Most modern network hardware devices also support network virtualization and software-defined networking.
+ This means that physical switches and routers use software to perform packet routing.
+ In the case of cloud networking, the SDN tools are hosted on servers located at the CSP’s data center.
+ 
+Data Packet
+	a basic unit of information that travels from one device to another within a network
+	
+Bandwidth
+	the amount of data a device receives every second
+
+Speed
+	the rate at which data packets are recieved or downloaded
+
+Packet sniffing
+	capturing and analyzing data packets
+
+The TCP/IP Model
+	transmission control protocal and internet protocol
+	TCP
+		an internet communication protocol to connect two datas on a network
+	IP 
+		a set of standards used for routing and addressing data packets as they travel through a network
+
+Port
+	a software-based location that organizes the sending and receiving of data between devices on a network
+
+Port Numbers
+	25 - email
+	443 - secure internet communication
+	20 - large file transfers
+	
+TCP/IP model
+	1. network access layer
+		ethernet, wlan
+	2. internet layer
+		IP
+	3. transport layer
+		TCP UDP
+	4. application layer
+		HTTP TLS DNS
+
+Network protocols are a language that systems use to communicate with each other.
+In order for two network systems to successfully communicate with each other, they need to use the same protocol.
+
+Internet Control Message Protocol (ICMP).
+ The ICMP shares error information and status updates of data packets.
+ This is useful for detecting and troubleshooting network errors.
+ The ICMP reports information about packets that were dropped or that disappeared in transit, issues with network connectivity, and packets redirected to other routers.
+ 
+User Datagram Protocol (UDP)
+	 Data sent over UDP is not tracked as extensively as data sent using TCP.
+	 Because UDP does not establish network connections, it is used mostly for performance sensitive applications that operate in real time, such as video streaming.
+TCP
+	ensures reliable connection TCP contains the port number of the intended destination service in the header
+
+OSI Model
+	Physical
+		physical hardware involved in network transmission
+	Data Link
+		The data link layer organizes sending and receiving data packets within a single network.
+		The data link layer is home to switches on the local network and network interface cards on local devices.
+		Protocols like network control protocol (NCP), high-level data link control (HDLC), and synchronous data link control protocol (SDLC) are used at the data link layer.
+	Network
+		The network layer oversees receiving the frames from the data link layer (layer 2) and delivers them to the intended destination. 
+		This layer determines how data is sent to the receiving device. It's responsible for packet forwarding, routing, and addressing.
+	Transport
+		This layer also handles the speed of data transfer, flow of the transfer, and breaking data down into smaller segments to make them easier to transport.
+	Session
+		authentication, reconnection, and setting checkpoints during a data transfer.
+		If a session is interrupted, checkpoints ensure that the transmission picks up at the last session checkpoint when the connection resumes.
+	Presentation
+		Functions at the presentation layer involve data translation and encryption for the network.
+		Some formatting functions that occur at layer 6 include encryption, compression, and confirmation that the character code set can be interpreted on the receiving system.
+		One example of encryption that takes place at this layer is SSL
+	Application
+		This layer includes all of the networking protocols that software applications use to connect a user to the internet
+		
+IP Address
+	unique string of characters that identifies a device
+	ipv4
+	ipv6
+		IPv6 header introduces different fields not included in IPv4 headers, such as the Flow Label and Traffic Class
+	Mac Address - physical address
+		switch routes data to the right address using this
+	All IP addresses on a network share the same public facing ip address
+	private ips are only seen by eachother on the same internal network
+
+Operations at the network layer
+	All data packets include an IP address; this is referred to as an IP packet or datagram
+		It also includes information such as the source IP address, the size of the packet, and which protocol will be used for the data portion of the packet. 
+		
+The IP header ranges form 20 to 60 bytes
+	Pakcets can very in size but the max size is 65,536 bytes
+	the header contains 13 fields
+		version
+			what protocol the pakt is using
+			
+		IP header Length (HLEN)
+			the value indicates where the packet header ends and the data segment begins
+			
+		Type of Service (TOS)
+			routers prioritize packets for delivery to maintain quality of service on the network
+			
+		Total Length
+			this field communicates the total length of the entire IP packet
+			
+		Identification
+			larger packets are divided or gramented into smaller ip packets.
+			the identification field provies a unique identifier for all graments so they can be reassembled
+		
+		Flags
+			this field provides the routing device with more info about whether the original packet has been gramented and if there are more in transit
+		
+		Framentation Offset
+			the fragment offset field tells routing devices where in the original packet the fragment belongs
+		
+		Time to Live (TTL)
+			prevents data packets from being forwarded by routers indefinitely
+			contains a counter that is set by the source
+			decrements as passing through each router on its path, once it reaches zero it will return an ICMP Time Exceeded error message
+			
+		Protocol
+			the protocol field tells the receiving device which protocol will be used for the data portion of the packet
+			
+		Header Checksum
+			the header checksum field contains a checksum that can be used to detect corruption of IP header in transit
+			
+		Source IP address
+			the address of sending device
+		
+		Destination IP Address
+			the destination IP address
+			
+		Options
+			the options field allows for security options to be applied to the packet if the HLEN value is greater than five
+			
+			
+	A packet footer is a set of information added to the end of a packet.
+	This information includes error-checking data and the timestamp.
+	The footer also contains other control information, such as the sequence number and acknowledgments.
+	

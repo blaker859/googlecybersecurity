@@ -1,0 +1,67 @@
+Manage Security Risks Week 3
+	Logs and SIEM Tools
+		Log Sources
+			Firewall Logs
+				attempted or established connections for incoming traffic
+				outbound requests from within the network
+			Network Logs
+				record of all computers and devices that enter and leave the network
+				connections between devices on the network
+			Server Logs
+				record of events related to services, such as websites, emails, or file shares
+				actions such as login, password, and username requests
+		SIEM tool
+			collects and analyzes logs
+			realtime visibility
+			automated alerts
+			stores log data
+	SIEM Dashboards
+		charts graphs or tables
+		Security orchestration, automation, and response (SOAR) is a collection of applications, tools, and workflows that uses automation to respond to security events.
+			Essentially, this means that handling common security-related incidents with the use of SIEM tools is expected to become a more streamlined process requiring less manual intervention. 
+	
+	Different Types of SIEM Tools
+		Self-Hosted
+			install operate and maintain with own infrastructure
+		Cloud-Hosted
+			ideal for organizations that dont want to invest in their own infrastructure
+		Hybrid
+			both
+		Splunk Enterprise
+			self hosted tool used to retain, analyze, and search an organizationslog data
+		Splunk Cloud
+			cloud hosted splunk
+		Chronicle
+			cloud-native tool designed to retain analyze and search data
+			Chronicle allows you to collect and analyze log data according to: 
+			A specific asset
+			A domain name
+			A user
+			An IP address
+		Suricata
+			Open Information Security Foundation (OISF)
+			open-source network analysis and threat detection software. 
+			Network analysis and threat detection software is used to inspect network traffic to identify suspicious behavior and generate network data logs.
+			The detection software finds activity across users, computers, or Internet Protocol (IP) addresses to help uncover potential threats, risks, or vulnerabilities. 
+	Security posture dashboard
+		The security posture dashboard is designed for security operations centers (SOCs).
+		It displays the last 24 hours of an organization’s notable security-related events and trends and allows security professionals to determine if security infrastructure and policies are performing as designed.
+	Executive Summary Dashboard
+		analyzes and monitors the overall health of the organization over time.
+		This helps security teams improve security measures that reduce risk. 
+	Incident review dashboard
+		 helps analysts identify risk for each risk object (e.g., a specific user, a computer, or an IP address).
+		 It shows changes in risk-related activity or behavior, such as a user logging in outside of normal working hours or unusually high network traffic from a specific computer.
+	Enterprise insights dashboard
+		It identifies suspicious domain names in logs, known as indicators of compromise (IOCs).
+		Each result is labeled with a confidence score to indicate the likelihood of a threat.
+		It also provides a severity level that indicates the significance of each threat to the organization.
+		A security analyst might use this dashboard to monitor login or data access attempts related to a critical asset—like an application or system—from unusual locations or devices.
+	Data ingestion and health dashboard
+		shows the number of event logs, log sources, and success rates of data being processed into Chronicle
+	IOC matches dashboard
+		Security professionals use this dashboard to observe domain names, IP addresses, and device IOCs over time in order to identify trends. 
+	Rule detections dashboard
+		provides statistics related to incidents with the highest occurrences, severities, and detections over time.
+	User sign in overview dashboard
+		provides information about user access behavior across the organization. 

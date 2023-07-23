@@ -1,0 +1,72 @@
+Linux and SQL Week 1
+
+The Wonderful World of Operating Systems
+	
+	OS
+		interface between hardware and user
+		
+	Windows
+		Windows is closed source and released in 1985
+		
+	macOS	
+		macOS is partially open source released in 1984
+		It has some open-source components, such as mac
+		OS’s kernel. macOS also has some closed-source components. 
+		
+	Linux
+		The first version of Linux was released in 1991. Open source. 
+		
+	ChromeOS
+		2011. partially open source, derived from Chromium OS which is open source
+		used in the education field
+		
+	Android and iOS
+		Android and iOS are both mobile operating systems.
+		Unlike the other operating systems mentioned, mobile operating systems are typically used in mobile devices, such as phones, tablets, and watches.
+		Android was introduced for public use in 2008, and iOS was introduced in 2007.
+		
+	legacy operating system 
+		an operating system that is outdated but still being used.
+		Some organizations continue to use legacy operating systems because software they rely on is not compatible with newer operating systems
+		
+The operating system at work
+	
+	User <-> Application <-> OS <-> Hardware
+	
+	Booting the computer
+		When you boot, or turn on, your computer, either a BIOS or UEFI microchip is activated.
+	
+	Basic Input/Output System (BIOS) 
+		microchip that contains loading instructions for the computer and is prevalent in older systems
+		
+	Unified Extensible Firmware Interface (UEFI) 
+		microchip that contains loading instructions for the computer and replaces BIOS on more modern systems.
+		UEFI provides enhanced security features.
+		one of the loading instructions is to verify the health of the computer’s hardware.
+		The last instruction from the BIOS or UEFI activates the bootloader.
+		The bootloader is a software program that boots the operating system.
+		Once the operating system has finished booting, your computer is ready for use.
+	
+Resource allocation via the OS	
+	OS manages resources for the computer
+		can view in task manager
+		
+		
+	Kernel-based Virtual Machine (KVM)
+		open-source hypervisor that is supported by most major Linux distributions.
+		It is built into the Linux kernel
+		which means it can be used to create virtual machines on any machine running a Linux operating system without the need for additional software.
+		
+The User Interface
+	program that allows user to control functions of the os
+	
+	GUI
+		icons to manage different tasks
+		start menu
+		task bar
+		desktop with icons and shortcuts
+		
+	CLI
+		text based user interface that uses commands to interact with the computer
+		more flexible and control than a gui
+		

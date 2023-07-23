@@ -1,0 +1,76 @@
+Automate Cybersecurity Tasks with Python Week 4
+
+Opening and reading files
+Parsing files
+Debugging Code
+
+Python for Automation
+
+
+	Work with files in Python
+		with
+			handles errors and manages external resources
+			with open ("login_attempts.txt", "r") as file:
+		
+		open()
+			opens file by absolute path
+			current folder by default
+			"r"
+				read file
+			"w"
+				write to file
+			file
+				stores object in "file" variable within the with statement
+			
+			with open("/home/analyst/logs/access_log.txt", "r") as file:
+			
+			Note: Calling the .write() method without using the with keyword when importing the file might result in its arguments not being completely written to the file if the file is not properly closed in another way.
+		
+		
+	Parse a text file in python
+		
+		parsing
+			converting data into a readable format
+		
+		.split()
+			converts a string to a list
+			by default it splits on whitespace
+			
+		.join()
+			converts a list into a string
+			
+			
+	Develop a parsing algorithm in Python
+		
+		"""
+		count words in a file
+		"""
+		
+		def count_variables(list_words,current_word):
+			counter = 0
+			for i in list_words:
+				if i==current_word:
+				  counter = counter + 1
+			print(counter,current_word)
+			
+		with open('random.txt', 'r') as file:
+			filetext=file.read()
+			
+		result=count_variables(filetext.split(),"his")
+
+
+	Debugging Python Code
+		syntax errors
+			invalid usage of python language
+			
+		Logic errors
+			an error that results when the logic used in code produces unintended results
+			Logic errors may not produce error messages.
+			
+		Exceptions
+			index values that don't exit
+			divide by zero
+			
+	
+	Apply debugging strategies
+		

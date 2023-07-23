@@ -1,0 +1,111 @@
+Automate Cybersecurity Tasks with Python Week 3
+
+Working with strings and lists
+Writing algorithms
+Using regular expressions
+
+	Working With Strings
+		can use double or single quotation marks
+		
+		str()
+			converts input object to a string
+		
+		len()
+			tells us how many elements the string has
+			
+		concatenation
+			+
+			
+		.upper()
+			returns string in all uppercase letters
+			print("Hello".upper())
+		
+		.lower()
+			return string in all lowercase letters
+			print("HELLO".lower())
+			
+	
+	String indices and slices
+	
+		index
+			number assigned to every element in a sequence
+			[1:4]
+				stops before last index
+				
+		.index()
+			finds the first occurance of index in a string and returns its position
+			You can also use negative numbers as indices. This is based on their position relative to the last character in the string
+		
+		
+	Work with lists and develop algorithms
+		
+		List operations in Python
+			my_list[1]
+			
+		List concatenation
+			combining two lists
+			
+		.insert()
+			adds an element in a specific position inside a list
+			my_list.insert(1,'8')
+
+		.remove()
+			removes the first occurance of a specific element in a list
+			
+			
+	Write a simple algorithm
+		.append()
+			add to end of list
+
+"""
+Extract first three characters of an IP address and store them in a list
+"""
+
+# IP_list= ["192.567.xxx.xxx", "198.561.xxx.xxx", "167.567.xxx.xxx", "185.xxx.xxx"]
+# detection_list=[]
+
+# for address in IP_list:
+#     detection_list.append(address[0:3])
+    
+# print(detection_list)
+ 
+
+	
+	Regular Expressions
+	
+		sequence of characters that forms a pattern
+		
+		+
+			represents one or more occurances of a letter
+			a+
+				any length of a's
+					aaa
+					a
+					aaaaaaa
+		\w
+			matches any alphaneumeric value
+			Note: The \w symbol also matches with the underscore ( _ ).
+				102
+				security
+				anything
+		\.
+			to include period to escape special meaning
+		
+		
+		import re
+			to import regular expressions
+			
+		re.findall()
+			returns a list of matches to a regular expression
+			re.findall("\w+@\w+\.\w+", list_name)
+				finds all email addresses in a list
+				
+		. matches to all characters, including symbols
+		
+		\d matches to all single digits [0-9]
+			"\d{2}" instructs Python to return all matches of exactly two single digits in a row from a string of multiple device IDs
+		\s matches to all single spaces 
+		
+		\. matches to the period character
+		
+	
